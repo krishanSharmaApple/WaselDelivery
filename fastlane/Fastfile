@@ -1,0 +1,72 @@
+#!/usr/bin/env ruby
+
+# Fastfile for WaselDelivery
+# Created date: 10-Jan-2017
+# Modified date: 1-Feb-2017
+# Written by Sasi kiran
+
+# To execute, call fastlane laneName from terminal.
+# For e.g.,type: fastlane beta to create the release adhoc IPA file for client and our qa team on HockeyApp.
+#
+# Call this from the project directory where your workspace file is present.
+
+# For customization, read this:
+# https://github.com/KrauseFx/fastlane/tree/master/docs
+
+# All available actions: https://github.com/KrauseFx/fastlane/blob/master/docs/Actions.md
+
+# Change the syntax highlighting to Ruby in your text editor for better readability
+# All lines starting with a # are comments in Ruby and are ignored when running `fastlane`
+
+###############################################################################
+fastlane_version "2.5.0"
+default_platform :ios
+
+# Fix for xcodebuild timing out on slower Macs.
+ENV["FASTLANE_XCODE_LIST_TIMEOUT"] = "120"
+
+notes_file = File.read("../Notes.md")
+release_notes = notes_file.split("#####Notes:\n").last
+
+platform :ios do
+  before_all do
+    # increment_build_number
+    # cocoapods
+  end
+
+  desc "Submit a new beta Build to HockeyApp"
+  lane :beta do
+    gym(
+      scheme: "WaselDelivery",
+      workspace: "WaselDelivery.xcworkspace",
+      export_method: "ad-hoc",
+      buildlog_path: "~/Library/Logs/gym",
+      destination: "generic/platform=iOS",
+      configuration: "Hockey",
+      codesigning_identity: "iPhone Distribution: Evolve Middle East (Z8M6RXMB6Z)",
+      output_name: "WaselDelivery.ipa",
+      clean: true,
+      silent: true,
+      include_symbols: false,
+      include_bitcode: true
+      )
+
+      hockey(
+        api_token: '2d3c38d755d148bf826e302969d37d95',
+        ipa: './WaselDelivery.ipa',
+        notes: release_notes,
+        dsym: './WaselDelivery.app.dSYM.zip',
+        notify: "1",
+        release_type: "0", # 0 = beta, 1 = app store, 2 = alpha, 3 = enterprise,
+        status: "2" # 2 = available for download; 1 = not available for download
+      )  
+  end
+
+  after_all do |lane|
+    notification(message:"Fastlane '#{lane}' succeeded", title: "Success")
+  end
+
+  error do |lane, exception|
+    notification(message:"Fastlane '#{lane}' failed with error", title: "Error")
+  end
+end

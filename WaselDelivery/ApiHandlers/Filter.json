@@ -1,0 +1,53 @@
+{
+    "response": {
+        "statusCode": "WD200",
+        "message": "Success,Restaurant Details retrieved"
+    },
+    "cuisines": [
+                 {
+                 "cuisine_id": 1,
+                 "name": "Italian",
+                 "created_by": 1,
+                 "created_date": 1474026398000,
+                 "updated_by": 1,
+                 "updated_date": 1474026398000,
+                 "is_active": 1
+                 },
+                 {
+                 "cuisine_id": 2,
+                 "name": "Japanese",
+                 "created_by": 1,
+                 "created_date": 1474026403000,
+                 "updated_by": 1,
+                 "updated_date": 1474026403000,
+                 "is_active": 1
+                 },
+                 {
+                 "cuisine_id": 3,
+                 "name": "Indian",
+                 "created_by": 1,
+                 "created_date": 1474026476000,
+                 "updated_by": 1,
+                 "updated_date": 1474026476000,
+                 "is_active": 1
+                 },
+                 {
+                 "cuisine_id": 4,
+                 "name": "Chinese",
+                 "created_by": 1,
+                 "created_date": 1474026485000,
+                 "updated_by": 1,
+                 "updated_date": 1474026485000,
+                 "is_active": 1
+                 },
+                 {
+                 "cuisine_id": 5,
+                 "name": "Bahraini",
+                 "created_by": 1,
+                 "created_date": 1474026492000,
+                 "updated_by": 1,
+                 "updated_date": 1474026492000,
+                 "is_active": 1
+                 }
+                 ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+  "id": 1,
+  "createdBy": null,
+  "updatedBy": null,
+  "createdDate": null,
+  "updatedDate": null,
+  "isActive": true,
+  "name": "Food",
+  "description": null
+  },
+ {
+ "id": 2,
+ "createdBy": null,
+ "updatedBy": null,
+ "createdDate": null,
+ "updatedDate": null,
+ "isActive": true,
+ "name": "Electronics",
+ "description": null
+ },
+ {
+ "id": 3,
+ "createdBy": null,
+ "updatedBy": null,
+ "createdDate": null,
+ "updatedDate": null,
+ "isActive": true,
+ "name": "Fashion",
+ "description": null
+ },
+ {
+ "id": 4,
+ "createdBy": null,
+ "updatedBy": null,
+ "createdDate": null,
+ "updatedDate": null,
+ "isActive": true,
+ "name": "Grocery",
+ "description": null
+ }
+]

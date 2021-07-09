@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="PaymentCardDetailsTableViewCell" customModule="Wasel_Delivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFG-16-o0N">
+                        <rect key="frame" x="0.0" y="5" width="320" height="49.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234 XXXX XXXX 5678" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDN-3u-vtO">
+                                <rect key="frame" x="20" y="16" width="160" height="18.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="75F-sI-cfE"/>
+                                    <constraint firstAttribute="height" constant="18.5" id="peB-g3-WxP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q5W-Lk-ijs" userLabel="Card Type ImageView">
+                                <rect key="frame" x="227" y="10" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="UHE-t0-LHr"/>
+                                    <constraint firstAttribute="height" constant="30" id="W1c-jx-CkW"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardSelected" translatesAutoresizingMaskIntoConstraints="NO" id="Aut-pL-BaW">
+                                <rect key="frame" x="282" y="17" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="8dR-Qy-hvI"/>
+                                    <constraint firstAttribute="width" constant="18" id="wJf-PG-6ke"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROh-wf-mmK">
+                                <rect key="frame" x="280" y="11" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="V51-Ye-GRn"/>
+                                    <constraint firstAttribute="width" constant="30" id="fur-sb-Mhm"/>
+                                </constraints>
+                                <state key="normal" image="delete"/>
+                                <connections>
+                                    <action selector="deleteButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="quL-fY-GXO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ROh-wf-mmK" firstAttribute="leading" secondItem="q5W-Lk-ijs" secondAttribute="trailing" constant="3" id="4FV-0z-1lQ"/>
+                            <constraint firstItem="Aut-pL-BaW" firstAttribute="leading" secondItem="q5W-Lk-ijs" secondAttribute="trailing" constant="5" id="TNc-s4-u3W"/>
+                            <constraint firstAttribute="trailing" secondItem="ROh-wf-mmK" secondAttribute="trailing" constant="10" id="cSQ-DN-CCe"/>
+                            <constraint firstItem="q5W-Lk-ijs" firstAttribute="centerY" secondItem="DDN-3u-vtO" secondAttribute="centerY" id="dZL-A3-d2Y"/>
+                            <constraint firstItem="DDN-3u-vtO" firstAttribute="top" secondItem="DFG-16-o0N" secondAttribute="top" constant="16" id="eUc-jb-zgC"/>
+                            <constraint firstItem="DDN-3u-vtO" firstAttribute="leading" secondItem="DFG-16-o0N" secondAttribute="leading" constant="20" id="iLW-NJ-Kag"/>
+                            <constraint firstItem="ROh-wf-mmK" firstAttribute="centerY" secondItem="DDN-3u-vtO" secondAttribute="centerY" id="pmw-p1-mE8"/>
+                            <constraint firstItem="Aut-pL-BaW" firstAttribute="centerY" secondItem="DDN-3u-vtO" secondAttribute="centerY" id="tKD-kX-Umr"/>
+                            <constraint firstItem="DDN-3u-vtO" firstAttribute="centerY" secondItem="DFG-16-o0N" secondAttribute="centerY" id="x0I-FJ-sVc"/>
+                            <constraint firstAttribute="trailing" secondItem="Aut-pL-BaW" secondAttribute="trailing" constant="20" id="ziQ-Fp-bv4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="_layer.borderColor">
+                                <color key="value" red="0.33333333329999998" green="0.74509803919999995" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="_layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="DFG-16-o0N" secondAttribute="bottom" constant="5" id="0XS-Kt-xNf"/>
+                    <constraint firstAttribute="trailing" secondItem="DFG-16-o0N" secondAttribute="trailing" id="JQA-TI-SzW"/>
+                    <constraint firstItem="DFG-16-o0N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ZHA-ul-vST"/>
+                    <constraint firstItem="DFG-16-o0N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xwK-Xe-zZB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgView" destination="DFG-16-o0N" id="1db-Rs-ERv"/>
+                <outlet property="cardNumberLabel" destination="DDN-3u-vtO" id="bQ8-KW-nfe"/>
+                <outlet property="cardSelectedStatusImageView" destination="Aut-pL-BaW" id="Y51-LH-wWl"/>
+                <outlet property="cardSelectionImageViewLeadingConstraint" destination="TNc-s4-u3W" id="EmD-zF-gSG"/>
+                <outlet property="cardSelectionImageViewTrailingConstraint" destination="ziQ-Fp-bv4" id="yhW-07-hZj"/>
+                <outlet property="cardSelectionImageViewWidthConstraint" destination="wJf-PG-6ke" id="FiP-KN-kji"/>
+                <outlet property="cardTypeImageView" destination="q5W-Lk-ijs" id="eQi-BD-HnD"/>
+                <outlet property="deleteButton" destination="ROh-wf-mmK" id="VP9-Iz-w4k"/>
+                <outlet property="deleteButtonTrailingConstraint" destination="cSQ-DN-CCe" id="nSs-KX-yd1"/>
+                <outlet property="deleteButtonWidthConstraint" destination="fur-sb-Mhm" id="EvP-hf-PtX"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cardSelected" width="14" height="12"/>
+        <image name="delete" width="21" height="23"/>
+    </resources>
+</document>

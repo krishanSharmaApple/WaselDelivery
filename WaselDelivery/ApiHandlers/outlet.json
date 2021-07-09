@@ -1,0 +1,38 @@
+[
+ {
+ "id": 1,
+ "name": "Maki",
+ "distance": 0,
+ "rating": 0,
+ "deliveryCharge": 0,
+ "budget": 1,
+ "canAcessImages": true,
+ "canAcessItems": true,
+ "image_url": null,
+ "description": "Japanese, Sushi, Asian"
+ },
+ {
+ "id": 2,
+ "name": "Cucina Italiana",
+ "distance": 0,
+ "rating": 0,
+ "deliveryCharge": 0,
+ "budget": 1,
+ "canAcessImages": true,
+ "canAcessItems": true,
+ "image_url": null,
+ "description": "Japanese, Sushi, Asian"
+ },
+ {
+ "id": 3,
+ "name": "Pastarito Durrat",
+ "distance": 0,
+ "rating": 0,
+ "deliveryCharge": 0,
+ "budget": 1,
+ "canAcessImages": true,
+ "canAcessItems": true,
+ "image_url": null,
+ "description": "Japanese, Sushi, Asian"
+ }
+ ]

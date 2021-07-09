@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressView" customModule="WaselDelivery" customModuleProvider="target">
+            <connections>
+                <outlet property="addressLabel" destination="16S-Ud-BHr" id="75O-zg-6j6"/>
+                <outlet property="addressView" destination="mji-Pe-cmy" id="r33-WP-tNS"/>
+                <outlet property="checkMark" destination="NCQ-ex-oqY" id="0UU-UE-DHL"/>
+                <outlet property="titleLabel" destination="0so-mZ-j1S" id="foJ-1Z-PGj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="205"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mji-Pe-cmy">
+                    <rect key="frame" x="20" y="17" width="324" height="188"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0so-mZ-j1S">
+                            <rect key="frame" x="88" y="27" width="148" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="1Fz-ZC-Hyl"/>
+                                <constraint firstAttribute="width" constant="148" id="2qY-j7-r7s"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                            <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16S-Ud-BHr">
+                            <rect key="frame" x="5" y="53" width="314" height="130"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                            <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="16S-Ud-BHr" firstAttribute="top" secondItem="0so-mZ-j1S" secondAttribute="bottom" constant="5" id="CPd-te-bw9"/>
+                        <constraint firstAttribute="bottom" secondItem="16S-Ud-BHr" secondAttribute="bottom" constant="5" id="CWX-gv-45M"/>
+                        <constraint firstItem="0so-mZ-j1S" firstAttribute="centerX" secondItem="mji-Pe-cmy" secondAttribute="centerX" id="Hpl-Rg-GJl"/>
+                        <constraint firstAttribute="trailing" secondItem="16S-Ud-BHr" secondAttribute="trailing" constant="5" id="aog-vt-dbH"/>
+                        <constraint firstItem="16S-Ud-BHr" firstAttribute="leading" secondItem="mji-Pe-cmy" secondAttribute="leading" constant="5" id="pbw-TB-0Ld"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="_layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tickWhite" translatesAutoresizingMaskIntoConstraints="NO" id="NCQ-ex-oqY">
+                    <rect key="frame" x="165" y="0.0" width="34" height="34"/>
+                    <color key="backgroundColor" red="0.33333333329999998" green="0.74509803919999995" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="CN5-bV-zdp"/>
+                        <constraint firstAttribute="height" constant="34" id="bky-Ap-w8n"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                            <integer key="value" value="17"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NCQ-ex-oqY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4HT-Wk-imz"/>
+                <constraint firstItem="mji-Pe-cmy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="9Ci-iB-s0k"/>
+                <constraint firstItem="mji-Pe-cmy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="EOd-K4-yXt"/>
+                <constraint firstItem="0so-mZ-j1S" firstAttribute="top" secondItem="NCQ-ex-oqY" secondAttribute="bottom" constant="10" id="LDU-xU-c4v"/>
+                <constraint firstAttribute="trailing" secondItem="mji-Pe-cmy" secondAttribute="trailing" constant="20" id="mqa-lV-SzS"/>
+                <constraint firstAttribute="bottom" secondItem="mji-Pe-cmy" secondAttribute="bottom" id="qoK-eu-Ngc"/>
+                <constraint firstItem="NCQ-ex-oqY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rZK-SG-V0b"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-103" y="-62.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tickWhite" width="21" height="17"/>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderAnythingCell" rowHeight="54" id="TfW-3q-O0R" customClass="OrderAnythingCell" customModule="Wasel_Delivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TfW-3q-O0R" id="VpH-KE-Vzu">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIJ-4u-fYz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="53.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Anything Anywhere!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lt-kq-yve">
+                                <rect key="frame" x="20" y="-1" width="113.5" height="55.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="ldj-L4-Bkf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xce-aN-8VU">
+                                <rect key="frame" x="200" y="14.5" width="100" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3jV-4b-SfQ"/>
+                                    <constraint firstAttribute="width" constant="100" id="9t8-by-O9u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
+                                <state key="normal" title="Order Now">
+                                    <color key="titleColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.35294117650000001" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xce-aN-8VU" secondAttribute="trailing" constant="20" id="07y-5C-iVF"/>
+                            <constraint firstItem="xce-aN-8VU" firstAttribute="centerY" secondItem="uIJ-4u-fYz" secondAttribute="centerY" constant="2.5" id="47r-u5-ycf"/>
+                            <constraint firstItem="xce-aN-8VU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5lt-kq-yve" secondAttribute="trailing" constant="5" id="VD7-FD-Q5f"/>
+                            <constraint firstItem="5lt-kq-yve" firstAttribute="centerY" secondItem="uIJ-4u-fYz" secondAttribute="centerY" id="j8J-Sw-Ou1"/>
+                            <constraint firstItem="5lt-kq-yve" firstAttribute="leading" secondItem="uIJ-4u-fYz" secondAttribute="leading" constant="20" id="s6B-TJ-YJc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uIJ-4u-fYz" firstAttribute="top" secondItem="VpH-KE-Vzu" secondAttribute="top" id="KUS-D5-rpa"/>
+                    <constraint firstAttribute="trailing" secondItem="uIJ-4u-fYz" secondAttribute="trailing" id="R9v-RM-59Y"/>
+                    <constraint firstAttribute="bottom" secondItem="uIJ-4u-fYz" secondAttribute="bottom" id="rI9-he-Flw"/>
+                    <constraint firstItem="uIJ-4u-fYz" firstAttribute="leading" secondItem="VpH-KE-Vzu" secondAttribute="leading" id="tUT-ZM-c5f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="orderAnythingButton" destination="xce-aN-8VU" id="165-07-GD5"/>
+            </connections>
+            <point key="canvasLocation" x="-8" y="-20"/>
+        </tableViewCell>
+    </objects>
+</document>

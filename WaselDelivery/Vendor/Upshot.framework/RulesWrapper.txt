@@ -1,0 +1,63 @@
+function loadRules(rules) {
+    
+    return $BK$.loadRules(rules);
+    
+}
+
+
+function consoleLog(){
+    
+    return $BK$.log = function(msg) {
+        console.log("ruleEngine: " + msg);
+    };
+
+}
+
+function setPlatform(platform){
+    
+    $BK$.setCurrentPlatform(platform);
+
+    return platform;
+}
+
+function processAggregates(aggregates, aggregateDef, localAggMap) {
+    
+   $BK$.prepareAggregateMap(JSON.parse(aggregates), JSON.parse(aggregateDef), JSON.parse(localAggMap),
+                             function(aggregatesMap) {
+                            
+                             liveRuleEngine.modifiedAggregates(JSON.stringify(aggregatesMap));
+    });
+    
+}
+
+function processEvent(eventString) {
+   
+    $BK$.processEvent(eventString, function(ruleId,ruleName,notification,keywords,timer) {
+
+        if (typeof notification !== 'undefined') {
+            liveRuleEngine.executedRuleForNotificationWithRuleId(notification, ruleId);
+        } else if(typeof timer !== 'undefined') {
+            liveRuleEngine.startRuleExecutionStatusCheckTimerWithDuration(timer);
+        } else {
+            liveRuleEngine.executedRuleForID(ruleId);
+        }
+    });
+}
+
+function processInbox(inboxString, payloadString) {
+    
+    return $BK$.processInbox(inboxString, payloadString);
+    
+}
+
+function setSurveyRules(filter) {
+
+        $BK$.setSurveyRules(filter);
+}
+
+function evaluateSurveyResponse(response) {
+
+    return $BK$.evaluateSurveyResponse(response);
+}
+
+

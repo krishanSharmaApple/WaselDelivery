@@ -1,0 +1,257 @@
+{
+    "status": "success",
+    "badges": [],
+    "aggValues": [],
+    "liveRules": [],
+    "aggregates": [],
+    "notifications": [
+                      {
+                      "msgId": "59b1071f2b2f15af5df1e448",
+                      "msgStatus": 0,
+                      "date": 1505001600,
+                      "message": "Camp1",
+                      "customData": {
+                      "app": "",
+                      "bk": {
+                      "campaignId": "59ae7d032b2f157d69f1e451",
+                      "repeatActivities": [
+                                           {
+                                           "id": "598aa768722fb16e128b4567",
+                                           "repeatCount": -1,
+                                           "thisSession": 1,
+                                           "considerSkip": 0,
+                                           "allowInbox": 0
+                                           }
+                                           ],
+                      "activity": [
+                                   {
+                                   "type": 12,
+                                   "id": "598aa768722fb16e128b4567",
+                                   "data": {
+                                   "name": "test",
+                                   "tag": [
+                                           "Test "
+                                           ],
+                                   "url": "https://www.google.com",
+                                   "fullScreen": 0,
+                                   "allowSkip": 0
+                                   },
+                                   "activityTaken": 0
+                                   }
+                                   ],
+                      "allUsers": 1
+                      }
+                      }
+                      },
+                      {
+                      "msgId": "59f84dc0e0ec61fc638b465a",
+                      "msgStatus": 0,
+                      "date": 1512000000,
+                      "message": "Trivia",
+                      "customData": {
+                      "app": "",
+                      "bk": {
+                      "campaignId": "59f812916d6f13ce363c9869",
+                      "repeatActivities": [
+                                           {
+                                           "id": "59f811036d6f1302363c986d",
+                                           "repeatCount": -1,
+                                           "thisSession": 1,
+                                           "considerSkip": 0,
+                                           "allowInbox": 0
+                                           }
+                                           ],
+                      "activity": [
+                                   {
+                                   "type": 11,
+                                   "id": "59f811036d6f1302363c986d",
+                                   "data": {
+                                   "filename": "59f811036d6f1302363c986d",
+                                   "url": "https://s3.amazonaws.com/bk-purpletalk/58c7c5f4037940701b7b23c6/bundles/59f811036d6f1302363c986d.zip",
+                                   "grades": {
+                                   "a": {
+                                   "name": "on",
+                                   "min": "40",
+                                   "max": "45",
+                                   "reward_type": "8",
+                                   "reward": "596362a66d6f13d115e00dda",
+                                   "rewardData": []
+                                   },
+                                   "b": {
+                                   "name": "on",
+                                   "min": "30",
+                                   "max": "39",
+                                   "reward_type": "9",
+                                   "reward": "59bbc79f6d6f135c213c9869",
+                                   "rewardData": {
+                                   "name": "Sri-Badge",
+                                   "tag": [
+                                           "1",
+                                           "10",
+                                           "2",
+                                           "3",
+                                           "4",
+                                           "5",
+                                           "6",
+                                           "7",
+                                           "8",
+                                           "9",
+                                           "jssdk"
+                                           ],
+                                   "id": "59bbc79f6d6f135c213c9869",
+                                   "filename": "59bbc79f6d6f135c213c9869-phone",
+                                   "url": "https://s3.amazonaws.com/bk-purpletalk/58c7c5f4037940701b7b23c6/bundles/59bbc79f6d6f135c213c9869-phone.zip",
+                                   "inboxVariables": {},
+                                   "localizedVariables": {
+                                   "title": "",
+                                   "desc": "sdfaefswdf",
+                                   "btn-1": "w"
+                                   },
+                                   "localeCode": "en-US",
+                                   "metadata": {
+                                   "id": "59bbc79f6d6f135c213c9869",
+                                   "name": "Sri-Badge",
+                                   "tags": [
+                                            "1",
+                                            "10",
+                                            "2",
+                                            "3",
+                                            "4",
+                                            "5",
+                                            "6",
+                                            "7",
+                                            "8",
+                                            "9",
+                                            "jssdk"
+                                            ],
+                                   "campaignId": "59f812916d6f13ce363c9869",
+                                   "campName": "Trivia",
+                                   "imageName": "58da6a6e60edb194588.JPG",
+                                   "image": "58da6a6e037940de627b23c6",
+                                   "description": "sdfaefswdf",
+                                   "buttons": [
+                                               "w"
+                                               ]
+                                   },
+                                   "mdate": 1505478564
+                                   }
+                                   },
+                                   "c": {
+                                   "name": "on",
+                                   "min": "1",
+                                   "max": "29",
+                                   "reward_type": "9",
+                                   "reward": "59bbc6c36d6f13c8203c9869",
+                                   "rewardData": {
+                                   "name": "4th LAy",
+                                   "tag": [
+                                           "9"
+                                           ],
+                                   "id": "59bbc6c36d6f13c8203c9869",
+                                   "filename": "59bbc6c36d6f13c8203c9869-phone",
+                                   "url": "https://s3.amazonaws.com/bk-purpletalk/58c7c5f4037940701b7b23c6/bundles/59bbc6c36d6f13c8203c9869-phone.zip",
+                                   "inboxVariables": {},
+                                   "localizedVariables": {
+                                   "title": "Test badge",
+                                   "desc": "Test description",
+                                   "btn-1": "sad"
+                                   },
+                                   "localeCode": "en-US",
+                                   "metadata": {
+                                   "id": "59bbc6c36d6f13c8203c9869",
+                                   "name": "4th LAy",
+                                   "tags": [
+                                            "9"
+                                            ],
+                                   "campaignId": "59f812916d6f13ce363c9869",
+                                   "campName": "Trivia",
+                                   "imageName": "58d8ae3d518d2832270.jpg",
+                                   "image": "58d8ae3d0379405b399a707d",
+                                   "title": "Test badge",
+                                   "description": "Test description",
+                                   "buttons": [
+                                               "sad"
+                                               ]
+                                   },
+                                   "mdate": 1505478343
+                                   }
+                                   }
+                                   }
+                                   },
+                                   "activityTaken": 0
+                                   }
+                                   ],
+                      "allUsers": 1
+                      }
+                      }
+                      },
+                      {
+                      "msgId": "5aeabc85556a5057008b4567",
+                      "msgStatus": 0,
+                      "date": 1525478400,
+                      "message": "MiniGames",
+                      "customData": {
+                      "app": "",
+                      "bk": {
+                      "campaignId": "5aeabb2d7f602e77008b4567",
+                      "repeatActivities": [
+                                           {
+                                           "id": "5aeaba3d7f602e4d008b4567",
+                                           "repeatCount": -1,
+                                           "thisSession": 1,
+                                           "considerSkip": 0,
+                                           "allowInbox": 0
+                                           }
+                                           ],
+                      "activity": [
+                                   {
+                                   "type": 13,
+                                   "allowSkip": 0,
+                                   "id": "5aeaba3d7f602e4d008b4567",
+                                   "data": {
+                                   "url": "https://stage.goupshot.com",
+                                   "name": "Mini Game1",
+                                   "tag": [
+                                           "New",
+                                           "PT ",
+                                           "Upshot",
+                                           "YG "
+                                           ],
+                                   "gameType": 1,
+                                   "sectors": [
+                                               {
+                                               "color": "629dc4",
+                                               "reward_type": "",
+                                               "reward_id": null,
+                                               "media_library": null
+                                               },
+                                               {
+                                               "color": "2980b9",
+                                               "reward_type": "",
+                                               "reward_id": null,
+                                               "media_library": null
+                                               },
+                                               {
+                                               "color": "34495e",
+                                               "reward_type": "",
+                                               "reward_id": null,
+                                               "media_library": "5abb657726f31e84008b4568"
+                                               }
+                                               ],
+                                   "spins": 3,
+                                   "sectorsCount": 3
+                                   },
+                                   "activityTaken": 0
+                                   }
+                                   ],
+                      "allUsers": 1
+                      }
+                      }
+                      }
+                      ],
+    "metadata": {
+        "ruleJSVersion": "1.0.1"
+    },
+    "appuid": "",
+    "statusCode": 200
+}

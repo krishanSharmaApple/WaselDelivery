@@ -1,0 +1,42 @@
+{
+    "id": 1456,
+    "name": "Amarnath",
+    "email": "nagarjuna.kollati@xcubelabs.com",
+    "mobile": 3333333333,
+    "imageUrl": "http://s3.amazonaws.com/http://s3.amazonaws.com/null",
+    "address": [
+                {
+                "id": 3,
+                "createdBy": null,
+                "updatedBy": null,
+                "createdDate": null,
+                "updatedDate": {
+                "dayOfYear": 330,
+                "dayOfWeek": "FRIDAY",
+                "month": "NOVEMBER",
+                "dayOfMonth": 25,
+                "year": 2016,
+                "monthValue": 11,
+                "hour": 20,
+                "minute": 6,
+                "second": 12,
+                "nano": 0,
+                "chronology": {
+                "calendarType": "iso8601",
+                "id": "ISO"
+                }
+                },
+                "isActive": true,
+                "latitude": 26.0667,
+                "longitude": 50.55770000000007,
+                "landmark": null,
+                "doorNumber": null,
+                "zipCode": 0,
+                "addressType": "HOME",
+                "location": "Unnamed Roaddf, Bahrain",
+                "country": "Bahrain",
+                "countryCode": 973
+                }
+                ],
+    "active": true
+}

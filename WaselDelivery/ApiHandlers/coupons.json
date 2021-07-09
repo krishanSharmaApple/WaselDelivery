@@ -1,0 +1,186 @@
+ [
+  {
+  "id": 1,
+  "name": "waselfd",
+  "code": "wasel1",
+  "offerType": "AMOUNTBASED",
+  "discountAmount": 3,
+  "value": null,
+  "description": "dfg",
+  "noOfUse": 5,
+  "createdDate": null,
+  "updatedDate": null,
+  "userType": "FIRSTTIMEUSER",
+  "startDate": {
+  "monthValue": 11,
+  "year": 2016,
+  "month": "NOVEMBER",
+  "dayOfMonth": 27,
+  "dayOfWeek": "SUNDAY",
+  "dayOfYear": 332,
+  "nano": 0,
+  "hour": 18,
+  "minute": 39,
+  "second": 30,
+  "chronology": {
+  "calendarType": "iso8601",
+  "id": "ISO"
+  }
+  },
+  "endDate": {
+  "monthValue": 11,
+  "year": 2016,
+  "month": "NOVEMBER",
+  "dayOfMonth": 30,
+  "dayOfWeek": "WEDNESDAY",
+  "dayOfYear": 335,
+  "nano": 0,
+  "hour": 18,
+  "minute": 39,
+  "second": 31,
+  "chronology": {
+  "calendarType": "iso8601",
+  "id": "ISO"
+  }
+  },
+  "minOrderValue": 5
+  },
+  {
+  "id": 2,
+  "name": "waselfd",
+  "code": "wasel3",
+  "offerType": "AMOUNTBASED",
+  "discountAmount": 3,
+  "value": null,
+  "description": "dfg",
+  "noOfUse": 5,
+  "createdDate": null,
+  "updatedDate": null,
+  "userType": "FIRSTTIMEUSER",
+  "startDate": {
+  "monthValue": 11,
+  "year": 2016,
+  "month": "NOVEMBER",
+  "dayOfMonth": 27,
+  "dayOfWeek": "SUNDAY",
+  "dayOfYear": 332,
+  "nano": 0,
+  "hour": 18,
+  "minute": 39,
+  "second": 30,
+  "chronology": {
+  "calendarType": "iso8601",
+  "id": "ISO"
+  }
+  },
+  "endDate": {
+  "monthValue": 12,
+  "year": 2016,
+  "month": "DECEMBER",
+  "dayOfMonth": 1,
+  "dayOfWeek": "THURSDAY",
+  "dayOfYear": 336,
+  "nano": 0,
+  "hour": 18,
+  "minute": 39,
+  "second": 31,
+  "chronology": {
+  "calendarType": "iso8601",
+  "id": "ISO"
+  }
+  },
+  "minOrderValue": 5
+  },
+  {
+  "id": 3,
+  "name": "waselfd",
+  "code": "wasel2",
+  "offerType": "PERCENTAGEBASED",
+  "discountAmount": 10,
+  "value": 10,
+  "description": "dfg",
+  "noOfUse": 5,
+  "createdDate": null,
+  "updatedDate": null,
+  "userType": "FIRSTTIMEUSER",
+  "startDate": {
+  "monthValue": 11,
+  "year": 2016,
+  "month": "NOVEMBER",
+  "dayOfMonth": 27,
+  "dayOfWeek": "SUNDAY",
+  "dayOfYear": 332,
+  "nano": 0,
+  "hour": 18,
+  "minute": 39,
+  "second": 30,
+  "chronology": {
+  "calendarType": "iso8601",
+  "id": "ISO"
+  }
+  },
+  "endDate": {
+  "monthValue": 11,
+  "year": 2016,
+  "month": "NOVEMBER",
+  "dayOfMonth": 30,
+  "dayOfWeek": "WEDNESDAY",
+  "dayOfYear": 335,
+  "nano": 0,
+  "hour": 18,
+  "minute": 39,
+  "second": 31,
+  "chronology": {
+  "calendarType": "iso8601",
+  "id": "ISO"
+  }
+  },
+  "minOrderValue": 5
+  },
+  {
+  "id": 4,
+  "name": "waselfd",
+  "code": "wasel5",
+  "offerType": "PERCENTAGEBASED",
+  "discountAmount": 3,
+  "value": 15,
+  "description": "dfg",
+  "noOfUse": 5,
+  "createdDate": null,
+  "updatedDate": null,
+  "userType": "EXISTINGUSER",
+  "startDate": {
+  "monthValue": 11,
+  "year": 2016,
+  "month": "NOVEMBER",
+  "dayOfMonth": 27,
+  "dayOfWeek": "SUNDAY",
+  "dayOfYear": 332,
+  "nano": 0,
+  "hour": 18,
+  "minute": 39,
+  "second": 30,
+  "chronology": {
+  "calendarType": "iso8601",
+  "id": "ISO"
+  }
+  },
+  "endDate": {
+  "monthValue": 12,
+  "year": 2016,
+  "month": "DECEMBER",
+  "dayOfMonth": 1,
+  "dayOfWeek": "THURSDAY",
+  "dayOfYear": 336,
+  "nano": 0,
+  "hour": 18,
+  "minute": 39,
+  "second": 31,
+  "chronology": {
+  "calendarType": "iso8601",
+  "id": "ISO"
+  }
+  },
+  "minOrderValue": 5
+  }
+  ]

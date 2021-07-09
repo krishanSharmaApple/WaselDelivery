@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardPaymentViewController" customModule="Wasel_Delivery" customModuleProvider="target">
+            <connections>
+                <outlet property="addNewCardButton" destination="2Fg-5k-Y1V" id="IrT-8B-xxE"/>
+                <outlet property="addNewCardButtonTopConstraint" destination="3zl-i4-e2V" id="e18-oc-MeQ"/>
+                <outlet property="cardDetailsTableView" destination="fHz-i8-7Q5" id="WS2-5G-yC4"/>
+                <outlet property="cardDetailsTableViewTopConstraint" destination="G1H-XB-JI2" id="TY2-fu-f4t"/>
+                <outlet property="continueButtonBottomConstraint" destination="tZY-dl-73g" id="TrV-ar-krK"/>
+                <outlet property="footerHeightConstraint" destination="nAf-iV-jBl" id="XTg-Pw-GNh"/>
+                <outlet property="orLabelHeightConstraint" destination="DrZ-rU-y3U" id="ncG-Os-F7i"/>
+                <outlet property="proceedButton" destination="Hb7-Ez-mNv" id="G4P-p3-LLr"/>
+                <outlet property="saveCardButton" destination="zmU-Uy-N4B" id="WRz-Wx-Avk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="warningBgView" destination="BUH-bQ-PWH" id="kBq-sn-fN1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="50" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="fHz-i8-7Q5">
+                    <rect key="frame" x="20" y="64" width="335" height="403"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hH8-bb-I48"/>
+                        <outlet property="delegate" destination="-1" id="O5K-75-gzA"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUH-bQ-PWH">
+                    <rect key="frame" x="57" y="273.5" width="261" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Saved Cards !!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeF-e1-Bo8">
+                            <rect key="frame" x="0.0" y="0.0" width="261" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="osd-KY-3BC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="30"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currently you do not have any Credit Cards saved in your profile" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zho-7s-vvn">
+                            <rect key="frame" x="0.0" y="70" width="261" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="L7a-uB-RdW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                            <color key="textColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zho-7s-vvn" secondAttribute="trailing" id="Fad-zQ-rFR"/>
+                        <constraint firstAttribute="trailing" secondItem="yeF-e1-Bo8" secondAttribute="trailing" id="G0Y-pu-VdI"/>
+                        <constraint firstAttribute="bottom" secondItem="zho-7s-vvn" secondAttribute="bottom" id="Mhs-sY-hX3"/>
+                        <constraint firstItem="zho-7s-vvn" firstAttribute="leading" secondItem="BUH-bQ-PWH" secondAttribute="leading" id="cvW-GH-pbw"/>
+                        <constraint firstItem="yeF-e1-Bo8" firstAttribute="top" secondItem="BUH-bQ-PWH" secondAttribute="top" id="fVK-ML-cx3"/>
+                        <constraint firstItem="yeF-e1-Bo8" firstAttribute="leading" secondItem="BUH-bQ-PWH" secondAttribute="leading" id="vKg-Yg-93U"/>
+                        <constraint firstAttribute="height" constant="120" id="xEi-FN-TLz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fdl-KF-tzK">
+                    <rect key="frame" x="0.0" y="467" width="375" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgh-YS-nTu">
+                            <rect key="frame" x="168" y="0.0" width="40" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="DrZ-rU-y3U"/>
+                                <constraint firstAttribute="width" constant="40" id="spB-JB-679"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fg-5k-Y1V">
+                            <rect key="frame" x="20" y="33" width="335" height="42"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="d48-XP-gz2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <state key="normal" title="PAY WITH NEW CARD">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addNewCardButtonAction:" destination="-1" eventType="touchUpInside" id="FPq-Ip-EIJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmU-Uy-N4B">
+                            <rect key="frame" x="41" y="85" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="9hN-bN-281"/>
+                                <constraint firstAttribute="height" constant="20" id="h3n-J7-Zuc"/>
+                            </constraints>
+                            <state key="normal" image="saveCard_UnSelected"/>
+                            <state key="selected" image="saveCard_Selected"/>
+                            <connections>
+                                <action selector="saveCardButtonAction:" destination="-1" eventType="touchUpInside" id="L8O-uz-gjE"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save new card for faster checkout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biR-ol-26R">
+                            <rect key="frame" x="71" y="86" width="233.5" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="Abd-yJ-bhw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can remove this card anytime from profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXN-EJ-rGa">
+                            <rect key="frame" x="52" y="112" width="271.5" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="rTU-q7-vLN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="12"/>
+                            <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="2Fg-5k-Y1V" firstAttribute="leading" secondItem="Fdl-KF-tzK" secondAttribute="leading" constant="20" id="0Cw-dh-Y0M"/>
+                        <constraint firstItem="2Fg-5k-Y1V" firstAttribute="top" secondItem="zgh-YS-nTu" secondAttribute="bottom" constant="15" id="3zl-i4-e2V"/>
+                        <constraint firstItem="biR-ol-26R" firstAttribute="top" secondItem="2Fg-5k-Y1V" secondAttribute="bottom" constant="11" id="OBX-A5-H52"/>
+                        <constraint firstItem="zgh-YS-nTu" firstAttribute="centerX" secondItem="Fdl-KF-tzK" secondAttribute="centerX" id="OLW-da-10a"/>
+                        <constraint firstItem="yXN-EJ-rGa" firstAttribute="centerX" secondItem="Fdl-KF-tzK" secondAttribute="centerX" id="PES-ns-rFg"/>
+                        <constraint firstAttribute="trailing" secondItem="2Fg-5k-Y1V" secondAttribute="trailing" constant="20" id="b7x-D5-7sY"/>
+                        <constraint firstItem="yXN-EJ-rGa" firstAttribute="top" secondItem="zmU-Uy-N4B" secondAttribute="bottom" constant="7" id="cja-QY-1KS"/>
+                        <constraint firstItem="zmU-Uy-N4B" firstAttribute="centerY" secondItem="biR-ol-26R" secondAttribute="centerY" id="fGM-cC-edX"/>
+                        <constraint firstAttribute="height" constant="150" id="nAf-iV-jBl"/>
+                        <constraint firstItem="biR-ol-26R" firstAttribute="leading" secondItem="zmU-Uy-N4B" secondAttribute="trailing" constant="10" id="oe8-vA-1fd"/>
+                        <constraint firstItem="biR-ol-26R" firstAttribute="centerX" secondItem="Fdl-KF-tzK" secondAttribute="centerX" id="q2z-G6-JjH"/>
+                        <constraint firstItem="zgh-YS-nTu" firstAttribute="top" secondItem="Fdl-KF-tzK" secondAttribute="top" id="yxy-RB-lyx"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hb7-Ez-mNv">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.33333333329999998" green="0.74509803919999995" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bb8-SV-1U0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                    <state key="normal" title="Proceed &amp; Pay">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="continueButtonAction:" destination="-1" eventType="touchUpInside" id="GSd-3a-y1f"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BUH-bQ-PWH" secondAttribute="trailing" constant="57" id="0lb-Kn-2Dz"/>
+                <constraint firstAttribute="trailing" secondItem="Fdl-KF-tzK" secondAttribute="trailing" id="0vn-B2-nD3"/>
+                <constraint firstItem="Hb7-Ez-mNv" firstAttribute="top" secondItem="Fdl-KF-tzK" secondAttribute="bottom" id="6q2-Xp-jcA"/>
+                <constraint firstItem="fHz-i8-7Q5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="G1H-XB-JI2"/>
+                <constraint firstAttribute="trailing" secondItem="fHz-i8-7Q5" secondAttribute="trailing" constant="20" id="Ln0-9c-8aM"/>
+                <constraint firstItem="Fdl-KF-tzK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QkL-O1-SjK"/>
+                <constraint firstItem="BUH-bQ-PWH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="TGM-NZ-7tk"/>
+                <constraint firstItem="Hb7-Ez-mNv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g9S-d7-CVo"/>
+                <constraint firstItem="Fdl-KF-tzK" firstAttribute="top" secondItem="fHz-i8-7Q5" secondAttribute="bottom" id="lMA-9H-S0R"/>
+                <constraint firstAttribute="bottom" secondItem="Hb7-Ez-mNv" secondAttribute="bottom" id="tZY-dl-73g"/>
+                <constraint firstItem="BUH-bQ-PWH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="57" id="xKg-TD-f7H"/>
+                <constraint firstItem="fHz-i8-7Q5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="zUh-33-jVU"/>
+                <constraint firstAttribute="trailing" secondItem="Hb7-Ez-mNv" secondAttribute="trailing" id="zxP-7t-BUW"/>
+            </constraints>
+            <point key="canvasLocation" x="-87.5" y="-1178.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="saveCard_Selected" width="22" height="22"/>
+        <image name="saveCard_UnSelected" width="22" height="22"/>
+    </resources>
+</document>

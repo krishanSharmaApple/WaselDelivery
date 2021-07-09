@@ -1,0 +1,33 @@
+framework module Upshot {
+    
+    umbrella header "Upshot.h"
+    
+    export *
+    module * { export * }
+
+    header "BKActivity+CoreDataClass.h"
+    header "BKActivity+CoreDataProperties.h"
+    header "BKPacketDownloadManager.h"
+    header "BKActivityEvent.h"
+    header "BKUtilities.h"
+    header "BKDatabaseManager.h"
+    header "BKInboxInfo.h"
+    header "NSString+Replacer.h"
+    header "USObject.h"
+    header "BKInbox+CoreDataClass.h"
+    header "BKInbox+CoreDataProperties.h"
+    header "BKBaseViewController.h"
+    header "BKPieChart.h"
+    header "BKBarChart.h"
+    header "BKChartDelegate.h"
+    header "BKBar.h"
+    header "BKGenericChart.h"
+    header "BKActivityHandler.h"
+    header "HTTPParamBuilder.h"
+    header "WindowRemoveType.h"
+}
+
+module Upshot.Swift {
+    header "Upshot-Swift.h"
+    requires objc
+}

@@ -1,0 +1,644 @@
+// 1.0.1
+var Journey = (function() {
+
+var payload = [];
+
+var inbox = [],
+journeyLocation = {},
+userProfile = [],
+journeyKeyMap = {},
+journeyIdToCamIdMap = {};
+
+function v() {
+return '1.0.1';
+}
+
+function processJourneyPayload(journeys) {
+
+payload = journeys;
+
+journeys.forEach(function (val, key){
+journeyLocation[val.id] = {};
+for (var key1 in val.state) {
+if (val.state.hasOwnProperty(key1)) {
+journeyLocation[val.id][key1] = val.state[key1].cs;
+journeyKeyMap[val.id] = key;
+journeyIdToCamIdMap[key1] = val.id;
+}
+}
+});
+
+return true;
+}
+
+function getAvailableActivities() {
+return evaluateJourneyLocations();
+}
+
+function processInbox(inboxPayload) {
+// seperate and save the smart campaigns in var inbox
+
+inboxPayload = JSON.parse(inboxPayload);
+
+var notifications = inboxPayload.notifications,
+journeys = inboxPayload.journeys;
+
+notifications.forEach(function (val, key){
+if (val.customData.bk.smartCampaign) {
+inbox.push(val);
+}
+})
+
+try {
+return processJourneyPayload(journeys);
+} catch (e) {
+return false;
+}
+
+}
+
+function processUserProfile(profile) {
+// profile must be in the format
+// [{"t": 1504869477275, "ft": 1, "k": "latitude", "v": 17.385044}]
+
+if (userProfile.length === 0) {
+userProfile = JSON.parse(profile);
+} else {
+profile = JSON.parse(profile);
+userProfile.forEach(function (val, key){
+profile.forEach(function (val1, key1){
+if (val.k === val1.k) {
+userProfile[key] = profile[key1];
+}
+})
+})
+}
+return matchesUserProfile();
+}
+
+// manage waiting list journey points
+
+function manageWaitList(jid, cid) {
+var currentLocation;
+payload.every(function (val, key){
+if (val.id === jid) {
+currentLocation = val.d[journeyLocation[jid][cid]];
+return false;
+} else {
+return true;
+}
+});
+
+var timeUnit;
+
+switch (currentLocation.d) {
+case 'minutes':
+timeUnit = 60*1000;
+break;
+case 'hours':
+timeUnit = 60*60*1000;
+break;
+case 'days':
+timeUnit = 24*60*60*1000;
+break;
+case 'date':
+timeUnit = 1000000000000000;
+break;
+default:
+
+}
+
+setTimeout(function (){
+journeyLocation[jid][cid] = currentLocation.c.Next;
+evaluateJourneyLocations();
+if (typeof payload[journeyKeyMap[jid]].d[journeyLocation[jid][cid]].t === 'number') {
+try {
+journeyCallback("{}");
+} catch (e) {
+
+}
+}
+}, timeUnit*currentLocation.w);
+}
+
+// Check for matching conditions
+
+function evaluateLocation(callback, matched, response) {
+
+if (!matched) {
+if (typeof callback === 'function') {
+callback({t : 'i', s : 'end'});
+}
+journeyLocation[response.jid][response.cid] = -1;
+return {t : 'i', s : 'end'};
+}
+
+var currentLocation;
+
+payload.every(function (val, key){
+if (val.id === response.jid) {
+currentLocation = val.d[journeyLocation[response.jid][response.cid]];
+return false;
+} else {
+return true;
+}
+})
+
+if (typeof currentLocation.t == 'number') {
+if (typeof callback === 'function') {
+callback({t: 'i', s: 'active', comid : currentLocation.id + response.cid, cid : response.cid, jid : response.jid});
+}
+return {t: 'i', s: 'active', comid : currentLocation.id + response.cid, cid : response.cid, jid : response.jid};
+} else if (currentLocation.t === 'dc') {
+if (typeof currentLocation.f.t === 'string') {
+matchesUserProfile(callback);
+} else if (typeof currentLocation.f.t === 'number') {
+matchesEvent();
+}
+} else if (currentLocation.t === 'w') {
+manageWaitList(response.jid, response.cid);
+}
+}
+
+function evaluateCondition(type, condition, eventPayload) {
+if (type === 'profile') {
+var matched = false,
+nexists = true;
+userProfile.every(function (val, key){
+// if (condition.k === val.k) {
+if ('email' == val.k) {
+nexists = false;
+switch (condition.cnd) {
+case 'exist':
+matched = true;
+break;
+case 'contains':
+if (val.v.indexOf(condition.v) !== -1) {
+matched = true;
+}
+break;
+case 'ncontains':
+if (val.v.indexOf(condition.v) === -1) {
+matched = true;
+}
+break;
+case 'eq':
+if (val.v === condition.v) {
+matched = true;
+}
+break;
+case 'neq':
+if (val.v !== condition.v) {
+matched = true;
+}
+break;
+case 'starts':
+if (val.v.indexOf(condition.v) === 0) {
+matched = true;
+}
+case 'ends':
+if (val.v.indexOf(condition.v) === (val.v.length() - condition.v.length())) {
+matched = true;
+}
+break;
+break;
+}
+}
+
+
+return !matched;
+});
+
+if (condition.cnd === 'nexists' && nexists) {
+// console.log('User profile matched');
+return true;
+} else {
+// console.log('User profile' + matched);
+return matched;
+}
+} else {
+var matched = false;
+
+if (typeof eventPayload.params[condition.k] === 'undefined' && condition.cnd === 'nexists') {
+matched = true;
+} else {
+switch (condition.cnd) {
+case 'like':
+if (eventPayload.params[condition.k] === condition.v.k) {
+matched = true;
+}
+break;
+case 'contains':
+if (eventPayload.params[condition.k].indexOf(condition.v.k) !== -1) {
+matched = true;
+}
+break;
+case 'ncontains':
+if (eventPayload.params[condition.k].indexOf(condition.v.k) === -1) {
+matched = true;
+}
+break;
+case 'starts':
+if (eventPayload.params[condition.k].indexOf(condition.v.k) === 0) {
+matched = true;
+}
+break;
+case 'ends':
+if (eventPayload.params[condition.k].indexOf(condition.v.k) === (eventPayload.params[condition.k] - condition.v.k)) {
+matched = true;
+}
+break;
+case 'neq':
+if (eventPayload.params[condition.k] !== condition.v.k) {
+matched = true;
+}
+break;
+case 'eq':
+if (eventPayload.params[condition.k] === condition.v.k) {
+matched = true;
+}
+break;
+case 'exists':
+matched = true;
+break;
+case 'gt':
+if (eventPayload.params[condition.k] > condition.v.k) {
+matched = true;
+}
+break;
+case 'lt':
+if (eventPayload.params[condition.k] < condition.v.k) {
+matched = true;
+}
+break;
+case 'gte':
+if (eventPayload.params[condition.k] >= condition.v.k) {
+matched = true;
+}
+break;
+case 'lte':
+if (eventPayload.params[condition.k] <= condition.v.k) {
+matched = true;
+}
+break;
+case 'eq':
+if (eventPayload.params[condition.k] === condition.v.k) {
+matched = true;
+}
+break;
+case 'neq':
+if (eventPayload.params[condition.k] !== condition.v.k) {
+matched = true;
+}
+break;
+default:
+
+}
+
+return matched;
+}
+}
+}
+
+function evaluateJourneyLocations() {
+var availableActivities = [],
+evaluateFurther = false;
+payload.forEach(function (val, key){
+for (var key1 in journeyLocation[val.id]) {
+if (journeyLocation[val.id].hasOwnProperty(key1)) {
+if (journeyLocation[val.id][key1] < 0) {
+return true;
+}
+
+var currentLocation = val.d[journeyLocation[val.id][key1]];
+
+if (typeof currentLocation.t === 'number') {
+var unit = {
+t : 'i',
+s : 'active',
+comid : currentLocation.id + key1,
+camid : key1,
+jid : val.id
+}
+
+availableActivities.push(unit);
+} else if (currentLocation.t === 'dc' && typeof currentLocation.f.t === 'string' && evaluateCondition('profile', currentLocation.f)) {
+journeyLocation[val.id][key1] = currentLocation.c.Yes;
+evaluateFurther = true;
+}
+}
+}
+});
+
+if (evaluateFurther) {
+evaluateJourneyLocations();
+} else {
+return availableActivities;
+}
+}
+
+function matchesUserProfile(activityCallback) {
+// profileUnit must be a single key value pair
+
+var matched = false,
+returnPayload = {
+t : 'i',
+s : 'na'
+};
+
+payload.forEach(function (val, key){
+for (var key1 in journeyLocation[val.id]) {
+if (journeyLocation[val.id].hasOwnProperty(key1)) {
+if (journeyLocation[val.id][key1] < 0) {
+return true;
+}
+var currentLocation = val.d[journeyLocation[val.id][key1]];
+
+if (currentLocation.t === 'dc' && currentLocation.f.t === 'UserProfile') {
+matched = evaluateCondition('profile', currentLocation.f);
+if (matched) {
+journeyLocation[val.id][key1] = currentLocation.c.Yes;
+}
+// console.log(journeyLocation);
+}
+
+}
+}
+});
+
+var availableActivities = evaluateJourneyLocations();
+
+if (availableActivities.length !== 0) {
+returnPayload = availableActivities[0];
+}
+
+return returnPayload;
+
+}
+
+function matchesEvent(eventPayload) {
+eventPayload = JSON.parse(eventPayload);
+
+var matched = false,
+returnPayload = {
+t : 'i',
+s : 'na'
+};
+
+if (eventPayload.type === 8) {
+payload.forEach(function (val, key){
+for (var key1 in journeyLocation[val.id]) {
+if (journeyLocation[val.id].hasOwnProperty(key1)) {
+if (journeyLocation[val.id][key1] < 0) {
+return true;
+}
+var currentLocation = val.d[journeyLocation[val.id][key1]];
+
+if (currentLocation.t === 'dc' && currentLocation.f.t === 'UserProfile') {
+matched = evaluateCondition('event', currentLocation.f, eventPayload);
+if (matched) {
+journeyLocation[val.id][key1] = currentLocation.c.Yes;
+}
+// console.log(journeyLocation);
+}
+
+}
+}
+});
+
+var availableActivities = evaluateJourneyLocations();
+
+if (availableActivities.length !== 0) {
+returnPayload = availableActivities[0];
+}
+
+return returnPayload;
+
+} else if (eventPayload.type === 7 && (eventPayload.params.activityType === 8 || eventPayload.params.activityType === 9 || eventPayload.subtype === 124)) {
+
+if (typeof journeyIdToCamIdMap[eventPayload.params.campaignId] !== 'undefined') {
+eventPayload.params.jid = journeyIdToCamIdMap[eventPayload.params.campaignId];
+} else {
+return {
+t : 'i',
+s : 'na'
+}
+}
+
+switch (eventPayload.subtype) {
+case 122:
+return evaluateResponse({
+t : 'x',
+at : eventPayload.params.activityType,
+id : eventPayload.params.activityId,
+cid : eventPayload.params.campaignId,
+jid : eventPayload.params.jid
+}, function (){});
+break;
+case 124:
+return evaluateResponse({
+t : 'x',
+at : eventPayload.params.activityType,
+id : eventPayload.params.activityId,
+cid : eventPayload.params.campaignId,
+jid : eventPayload.params.jid,
+r : eventPayload.params.elementId
+}, function (){});
+break;
+default:
+
+}
+}
+
+}
+
+function evaluateResponse(response, responseCallback) {
+// This is the expected structure of response
+// t: response type, at : activityType, id : activity id, rid : response id, r : responded, x : skipped, o : option selected
+// {t : 'r, x', at : 5, id : 'sdfsdafsad4546146', r : ['651351fdbd'], cid : 'fdsfsadfg57g475', jid : 'sfdgafgf'}
+
+var info = {},
+currentLocation;
+
+if (typeof response === 'string') {
+response = JSON.parse(response);
+
+if (typeof journeyIdToCamIdMap[response.campaignId] !== 'undefined') {
+response.jid = journeyIdToCamIdMap[response.campaignId];
+} else {
+return {
+t : 'i',
+s : 'na'
+}
+}
+
+var adapt = {
+t : 'r',
+at : response.activityType,
+cid : response.campaignId,
+id : response.activityId,
+jid : response.jid
+};
+
+switch (adapt.at) {
+case 0:
+adapt.r = response.responses
+var surveyResponses = [];
+adapt.r.forEach(function (val, key){
+var unit = {};
+unit[val.question_id] = val.bit_value;
+surveyResponses.push(unit);
+});
+
+adapt.r = surveyResponses;
+break;
+case 1:
+adapt.r = response.responses.rating_value;
+break;
+case 5:
+adapt.r = response.responses.opinion_id;
+break;
+default:
+
+}
+
+response = adapt;
+}
+
+payload.every(function (val, key){
+if (val.id === response.jid) {
+currentLocation = val.d[journeyLocation[response.jid][response.cid]];
+return false;
+} else {
+return true;
+}
+})
+
+if (response.id !== currentLocation.id || typeof currentLocation.t !== 'number') {
+return;
+}
+
+var matched = false;
+
+switch (response.t) {
+case 'r':
+
+if (typeof currentLocation.c.end !== 'undefined') {
+matched = true;
+journeyLocation[response.jid][response.cid] = currentLocation.c.end;
+} else {
+if (currentLocation.t !== 0) {
+if (('responded' in currentLocation.c && response.r in currentLocation.c.responded) || ('Achieved' in currentLocation.c.responded)) {
+journeyLocation[response.jid][response.cid] = currentLocation.c.responded[response.r];
+matched = true;
+}
+} else {
+if ('qid' in currentLocation && currentLocation.qid in response.r) {
+for (var key in currentLocation.c.responded) {
+if (currentLocation.c.responded.hasOwnProperty(key)) {
+if (response.r[currentLocation.qid] & key == key) {
+journeyLocation[response.jid][response.cid] = currentLocation.c.responded[key]
+matched = true;
+return false;
+}
+}
+}
+}
+}
+}
+
+if (!matched && currentLocation.c['Responded/Taken']) {
+journeyLocation[response.jid][response.cid] = currentLocation.c['Responded/Taken'];
+matched = true;
+}
+break;
+case 'x':
+if (currentLocation.c['Skipped']) {
+journeyLocation[response.jid][response.cid] = currentLocation.c['Skipped'];
+matched = true;
+}
+break;
+case 'o':
+response.ids.every(function(val, key) {
+if (currentLocation.c[val]) {
+journeyLocation[response.jid][response.cid] = currentLocation.c[val];
+matched = true;
+return false;
+} else {
+return true;
+}
+});
+break;
+default:
+
+}
+
+return evaluateLocation(responseCallback, matched, response);
+}
+
+function getActivity(activityType, tag) {
+
+var info = {};
+
+if (typeof activityType !== 'number') {
+info = {
+s: 'error'
+}
+return info;
+}
+
+info = {
+t : 'i',
+s : 'na'
+}
+
+var matched = false;
+// console.log(journeyIdToCamIdMap);
+payload.every(function (val, key){
+for (var key1 in journeyLocation[val.id]) {
+if (journeyLocation[val.id].hasOwnProperty(key1)) {
+if (journeyLocation[val.id][key1] < 0) {
+return true;
+}
+var currentLocation = val.d[journeyLocation[val.id][key1]];
+
+if (currentLocation.t === activityType || activityType === -1) {
+info = {
+t : 'i',
+s : 'active',
+comid : currentLocation.id + key1,
+camid : key1,
+jid : val.id
+}
+matched = true;
+}
+
+}
+
+return !matched;
+}
+
+return !matched
+});
+
+return JSON.stringify(info);
+}
+
+function delegate(obj) {
+// console.log(obj);
+}
+
+return {
+v : v,
+processInbox: processInbox,
+sendUserProfile: processUserProfile,
+getAvailableActivities : getAvailableActivities,
+getActivity: getActivity,
+sendResponse: evaluateResponse,
+processEvent: matchesEvent,
+delegate : delegate
+}
+
+})();
+
+// module.exports = Journey;

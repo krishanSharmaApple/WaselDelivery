@@ -1,0 +1,47 @@
+/* 
+  Localizable.strings
+  WaselDelivery
+
+  Created by Amarnath Reddy on 06/10/16.
+  Copyright © 2016 [x]cube Labs. All rights reserved.
+*/
+
+"Bahrain.OutOfBahrainMessage" = "Currently we don’t offer delivery to your location but we are expanding.\n We will notify you soon";
+
+"Bahrain.EmptyCartMessage" = "Looks like your cart is empty.\nStart placing your order and get anything delivered by us";
+
+"Bahrain.EmptyOrderHistoryMessage" = "You don’t have any order history. Order something from your favorite place.";
+
+"Bahrain.LoginFromHistoryMessage" = "Please signin to see your order history.";
+
+"Bahrain.EmptyOutletsMessage" = "We are expanding our service. Will be notifying you soon.";
+
+"Bahrain.ComingSoon" = "Coming Soon!!!";
+
+"Bahrain.Empty" = "Empty!!!";
+
+"Bahrain.EmptySearch" = "OOPS !!!";
+
+"Bahrain.EmptyCardsMessage" = "Looks like you don’t have saved cards. Check “Save This Card” while payment.";
+
+"Apply" = "Apply";
+
+"Done" = "Done";
+
+//Response errors
+"Bahrain.API.RequestTimeout" = "Your Request has been timed out. Please try again later.";
+
+"Bahrain.API.BadRequest" = "Bad Request!!!";
+
+"Bahrain.API.InternalServerError" = "An internal server error has occured. Please try again later.";
+
+"Bahrain.API.ParseError" = "Unable to parse the response. Please try again later.";
+
+"Bahrain.API.UnboxParseError" = "Unbox is unable to parse the response. Please try again later.";
+
+"Bahrain.API.AccessTokenExpireError" = "Accesstoken expired.";
+
+"Bahrain.API.InvalidResponseError" = "InvalidResponse.";
+
+"Bahrain.API.UnknownError" = "Unknown error. Please try again later.";
+

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MultiLocationPopUpViewController" customModule="WaselDelivery" customModuleProvider="target">
+            <connections>
+                <outlet property="doneView" destination="Czy-9m-6W9" id="7BA-BV-udZ"/>
+                <outlet property="locationName" destination="WXY-0m-2Eh" id="hCG-ER-4R4"/>
+                <outlet property="multiLocationTableView" destination="Wzr-O8-Mmf" id="D0E-29-hpo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92V-Ev-9cc">
+                    <rect key="frame" x="20" y="199.5" width="335" height="268"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXY-0m-2Eh">
+                            <rect key="frame" x="10" y="5" width="315" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="rhM-Mn-5Ue"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="20"/>
+                            <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose outlet location " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQs-DE-og2">
+                            <rect key="frame" x="10" y="27" width="315" height="22"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="jh4-mf-Ybd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                            <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="91" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wzr-O8-Mmf">
+                            <rect key="frame" x="0.0" y="54" width="335" height="168"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="sectionIndexBackgroundColor" red="0.93725490199999995" green="0.97254901959999995" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="sectionIndexTrackingBackgroundColor" red="0.33333333329999998" green="0.66666666669999997" blue="0.14901960780000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="LfM-fh-qkr"/>
+                                <outlet property="delegate" destination="-1" id="2wo-TA-ztV"/>
+                            </connections>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Czy-9m-6W9">
+                            <rect key="frame" x="0.0" y="222" width="335" height="46"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1br-8P-3kO" customClass="HighlightButton" customModule="WaselDelivery" customModuleProvider="target">
+                                    <rect key="frame" x="215" y="0.0" width="120" height="46"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="120" id="Ddm-wO-feO"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                            <color key="value" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="defaultColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="cancelMultiLocationPopupAction:" destination="-1" eventType="touchUpInside" id="Ecl-TT-ZGf"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hnc-O8-Wut" customClass="HighlightButton" customModule="WaselDelivery" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="215" height="46"/>
+                                    <color key="backgroundColor" red="0.31372549020000001" green="0.74509803919999995" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                    <state key="normal" title="Confirm">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                            <color key="value" red="0.18039215689999999" green="0.63137254899999995" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="defaultColor">
+                                            <color key="value" red="0.33333333329999998" green="0.74509803919999995" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="confirmMultiLocationPopupAction:" destination="-1" eventType="touchUpInside" id="pne-ef-g9k"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="1br-8P-3kO" firstAttribute="top" secondItem="Czy-9m-6W9" secondAttribute="top" id="5uh-YJ-BDB"/>
+                                <constraint firstItem="1br-8P-3kO" firstAttribute="leading" secondItem="Hnc-O8-Wut" secondAttribute="trailing" id="7Tm-AF-us2"/>
+                                <constraint firstItem="Hnc-O8-Wut" firstAttribute="top" secondItem="Czy-9m-6W9" secondAttribute="top" id="CxB-2E-ahw"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="XnF-D5-BdQ"/>
+                                <constraint firstAttribute="bottom" secondItem="Hnc-O8-Wut" secondAttribute="bottom" id="bW9-nU-LrF"/>
+                                <constraint firstAttribute="trailing" secondItem="1br-8P-3kO" secondAttribute="trailing" id="n15-Tr-RJo"/>
+                                <constraint firstItem="Hnc-O8-Wut" firstAttribute="leading" secondItem="Czy-9m-6W9" secondAttribute="leading" id="ncv-u5-1IB"/>
+                                <constraint firstAttribute="bottom" secondItem="1br-8P-3kO" secondAttribute="bottom" id="uUY-mz-rSj"/>
+                                <constraint firstAttribute="height" constant="46" id="ydM-fN-zit"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Wzr-O8-Mmf" firstAttribute="leading" secondItem="92V-Ev-9cc" secondAttribute="leading" id="21G-W9-UeX"/>
+                        <constraint firstAttribute="height" constant="268" id="BgJ-9L-qYE"/>
+                        <constraint firstItem="Czy-9m-6W9" firstAttribute="top" secondItem="Wzr-O8-Mmf" secondAttribute="bottom" id="CUZ-2b-EnK"/>
+                        <constraint firstItem="Wzr-O8-Mmf" firstAttribute="top" secondItem="xQs-DE-og2" secondAttribute="bottom" constant="5" id="E32-Gy-r89"/>
+                        <constraint firstAttribute="bottom" secondItem="Czy-9m-6W9" secondAttribute="bottom" id="LBC-X8-USA"/>
+                        <constraint firstItem="WXY-0m-2Eh" firstAttribute="top" secondItem="92V-Ev-9cc" secondAttribute="top" constant="5" id="Pz3-r8-ceu"/>
+                        <constraint firstAttribute="trailing" secondItem="WXY-0m-2Eh" secondAttribute="trailing" constant="10" id="Rhp-Os-bWn"/>
+                        <constraint firstAttribute="trailing" secondItem="xQs-DE-og2" secondAttribute="trailing" constant="10" id="Rzm-KZ-g8L"/>
+                        <constraint firstAttribute="trailing" secondItem="Wzr-O8-Mmf" secondAttribute="trailing" id="TgD-Kr-gpJ"/>
+                        <constraint firstItem="WXY-0m-2Eh" firstAttribute="leading" secondItem="92V-Ev-9cc" secondAttribute="leading" constant="10" id="Ub1-m8-BbF"/>
+                        <constraint firstItem="Czy-9m-6W9" firstAttribute="leading" secondItem="92V-Ev-9cc" secondAttribute="leading" id="Uk3-mT-ujG"/>
+                        <constraint firstAttribute="trailing" secondItem="Czy-9m-6W9" secondAttribute="trailing" id="mea-2a-yXZ"/>
+                        <constraint firstItem="xQs-DE-og2" firstAttribute="top" secondItem="WXY-0m-2Eh" secondAttribute="bottom" id="sR1-ll-haI"/>
+                        <constraint firstItem="xQs-DE-og2" firstAttribute="leading" secondItem="92V-Ev-9cc" secondAttribute="leading" constant="10" id="wyZ-xn-XB7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="92V-Ev-9cc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="edn-yr-KEg"/>
+                <constraint firstAttribute="trailing" secondItem="92V-Ev-9cc" secondAttribute="trailing" constant="20" id="tQa-vF-N2x"/>
+                <constraint firstItem="92V-Ev-9cc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="yZc-Ks-8nE"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

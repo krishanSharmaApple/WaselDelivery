@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderHistoryCell" rowHeight="110" id="KGk-i7-Jjw" customClass="OrderHistoryCell" customModule="Wasel_Delivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1k0-oj-yag">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07 Aug, 01:51 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MGU-NH-bk4">
+                                <rect key="frame" x="20" y="5" width="109" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="lGO-ia-GzI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVS-pZ-ZJn">
+                                <rect key="frame" x="164" y="38" width="120" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="aqG-RF-jKs"/>
+                                    <constraint firstAttribute="width" constant="120" id="nUw-QJ-Qe2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="-40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="90" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="RE-ORDER" image="reorder">
+                                    <color key="titleColor" red="0.31372549020000001" green="0.74509803919999995" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="_layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_layer.borderColor">
+                                        <color key="value" red="0.33333333333333331" green="0.74509803921568629" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="repeatOrder:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1mK-Fs-W9y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gym-Ub-4RO">
+                                <rect key="frame" x="20" y="29" width="109" height="45.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpl-e4-vkH">
+                                <rect key="frame" x="20" y="79.5" width="109" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="iso-mn-j3N"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Order Total:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="BD">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name=".SFNSText"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbv-xF-78B">
+                                <rect key="frame" x="0.0" y="102.5" width="320" height="4"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="aOY-1q-NeW"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sideArrow" translatesAutoresizingMaskIntoConstraints="NO" id="YY7-mG-uGg">
+                                <rect key="frame" x="291" y="51" width="8" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="WV2-1g-EuI"/>
+                                    <constraint firstAttribute="height" constant="8" id="zaX-Um-vjd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YY7-mG-uGg" firstAttribute="centerY" secondItem="1k0-oj-yag" secondAttribute="centerY" id="434-cj-bO5"/>
+                            <constraint firstItem="Gym-Ub-4RO" firstAttribute="top" secondItem="MGU-NH-bk4" secondAttribute="bottom" constant="5" id="55M-9f-Tyw"/>
+                            <constraint firstItem="MGU-NH-bk4" firstAttribute="top" secondItem="1k0-oj-yag" secondAttribute="top" constant="5" id="9BP-Cn-LqE"/>
+                            <constraint firstItem="pbv-xF-78B" firstAttribute="top" secondItem="Xpl-e4-vkH" secondAttribute="bottom" constant="5" id="BEg-oz-0U8"/>
+                            <constraint firstItem="pbv-xF-78B" firstAttribute="leading" secondItem="1k0-oj-yag" secondAttribute="leading" id="Chw-Hc-U0k"/>
+                            <constraint firstItem="Gym-Ub-4RO" firstAttribute="trailing" secondItem="MGU-NH-bk4" secondAttribute="trailing" id="DAz-VB-bQN"/>
+                            <constraint firstAttribute="trailing" secondItem="pbv-xF-78B" secondAttribute="trailing" id="JH9-ZB-F2Z"/>
+                            <constraint firstAttribute="trailing" secondItem="tVS-pZ-ZJn" secondAttribute="trailing" constant="36" id="Mn2-aT-QWh"/>
+                            <constraint firstAttribute="trailing" secondItem="YY7-mG-uGg" secondAttribute="trailing" constant="21" id="QrI-qv-som"/>
+                            <constraint firstItem="tVS-pZ-ZJn" firstAttribute="leading" secondItem="MGU-NH-bk4" secondAttribute="trailing" constant="35" id="RE5-Oy-13K"/>
+                            <constraint firstItem="Xpl-e4-vkH" firstAttribute="leading" secondItem="1k0-oj-yag" secondAttribute="leading" constant="20" id="cDn-aX-0Pe"/>
+                            <constraint firstItem="tVS-pZ-ZJn" firstAttribute="centerY" secondItem="1k0-oj-yag" secondAttribute="centerY" id="e1v-IR-gCm"/>
+                            <constraint firstAttribute="bottom" secondItem="pbv-xF-78B" secondAttribute="bottom" constant="3" id="eOI-XF-PzN"/>
+                            <constraint firstItem="Gym-Ub-4RO" firstAttribute="leading" secondItem="1k0-oj-yag" secondAttribute="leading" constant="20" id="k4F-ab-hbp"/>
+                            <constraint firstItem="Xpl-e4-vkH" firstAttribute="top" secondItem="Gym-Ub-4RO" secondAttribute="bottom" constant="5" id="m7X-zu-U2u"/>
+                            <constraint firstItem="Xpl-e4-vkH" firstAttribute="trailing" secondItem="MGU-NH-bk4" secondAttribute="trailing" id="ptK-iA-FhB"/>
+                            <constraint firstItem="MGU-NH-bk4" firstAttribute="leading" secondItem="1k0-oj-yag" secondAttribute="leading" constant="20" id="zJh-Mk-gZE"/>
+                            <constraint firstItem="YY7-mG-uGg" firstAttribute="leading" secondItem="tVS-pZ-ZJn" secondAttribute="trailing" constant="7" id="zqC-R7-6yc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1k0-oj-yag" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6uD-HB-H3D"/>
+                    <constraint firstAttribute="bottom" secondItem="1k0-oj-yag" secondAttribute="bottom" id="BeT-cL-87h"/>
+                    <constraint firstAttribute="trailing" secondItem="1k0-oj-yag" secondAttribute="trailing" id="Boz-hQ-gNy"/>
+                    <constraint firstItem="1k0-oj-yag" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mmw-19-OjC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="MGU-NH-bk4" id="LqH-eH-mpN"/>
+                <outlet property="grandTotalLabel" destination="Xpl-e4-vkH" id="YB8-Kj-iLX"/>
+                <outlet property="outletLabel" destination="Gym-Ub-4RO" id="eop-oO-l7R"/>
+                <outlet property="repeatOrderButton" destination="tVS-pZ-ZJn" id="bCj-zC-kAN"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="52"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="reorder" width="18" height="12"/>
+        <image name="sideArrow" width="8" height="14"/>
+    </resources>
+</document>

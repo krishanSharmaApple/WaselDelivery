@@ -1,0 +1,52 @@
+force_try: warning
+force_cast: warning
+
+#override rules here
+cyclomatic_complexity: 50
+
+excluded: # paths to ignore during linting. overridden by `included`.
+  - Carthage
+  - Pods
+
+opt_in_rules:
+  - force_unwrapping  # to catch lazy engineers who force unwrap optionals
+  - weak_delegate # delegates have to be weak to avoid retain cycles
+  - vertical_whitespace # too much of vertical whitespace in code is hard to read
+  - trailing_semicolon # dude, this is not objective-c
+  - opening_brace # opening braces should be preceded by a single space and on the same line as the declaration
+  - mark # mark comment should be in valid format
+  - legacy_constructor # use swifty constructors
+  - control_statement # if, for, while, do statements shouldn't wrap their conditionals in parentheses
+  - comma # stop abusing commas
+  - colon # stop abusing colons
+  - cyclomatic_complexity
+
+disabled_rules: # rule identifiers to exclude from running
+  - line_length # enforce a maximum line length
+  - function_body_length # enforce a maximum function body length
+  - type_body_length # enforce a maximum type body length
+  - variable_name # variables should start with a lowercase character
+  - type_name # enforce a 3-character minimum type name length
+  - file_length # enforce a maximum file length
+  - function_parameter_count # ¯\_(ツ)_/¯ sometimes your methods can have a lot of params
+  - trailing_whitespace # disable trailing whitespace that Xcode adds for new lines
+  - large_tuple
+custom_rules:
+  force_https:
+    name: "Force HTTPS over HTTP"
+    regex: "((?i)http(?!s))"
+    match_kinds: string
+    message: "HTTPS should be favored over HTTP"
+    severity: warning
+
+  comments_space:
+    name: "Space After Comment"
+    regex: '(^ *//\w+)'     # Use single quote here to fix the yaml parse issue
+    message: "There should be a space after //"
+    severity: warning
+
+  multiple_empty_lines:
+    name: "Multiple Empty Lines"
+    regex: '((?:\s*\n){3,})'
+    message: "There are too many line breaks"
+    severity: warning

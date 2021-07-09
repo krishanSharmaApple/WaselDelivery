@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OrderCancelReasonsCell" customModule="Wasel_Delivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Others" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKq-f1-x86">
+                        <rect key="frame" x="10" y="10" width="280" height="23"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropDown" translatesAutoresizingMaskIntoConstraints="NO" id="bbM-ub-UtV">
+                        <rect key="frame" x="294" y="14" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="bbM-ub-UtV" secondAttribute="height" multiplier="1:1" id="Ppn-tG-HWy"/>
+                            <constraint firstAttribute="height" constant="16" id="cKx-be-gsC"/>
+                            <constraint firstAttribute="width" constant="16" id="slZ-fJ-GO9"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pai-Pl-P5L">
+                        <rect key="frame" x="10" y="42.5" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.83921568627450982" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="qXw-zO-h4t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rKq-f1-x86" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="1GA-bD-ex5"/>
+                    <constraint firstAttribute="trailing" secondItem="bbM-ub-UtV" secondAttribute="trailing" constant="10" id="1Kp-Di-Vtn"/>
+                    <constraint firstAttribute="bottom" secondItem="Pai-Pl-P5L" secondAttribute="bottom" id="Hwz-ip-xnC"/>
+                    <constraint firstItem="rKq-f1-x86" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Is5-X2-36q"/>
+                    <constraint firstItem="bbM-ub-UtV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JNi-X0-Wyz"/>
+                    <constraint firstAttribute="trailing" secondItem="Pai-Pl-P5L" secondAttribute="trailing" constant="10" id="Mf2-dI-6PI"/>
+                    <constraint firstItem="Pai-Pl-P5L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="PyA-m6-EOv"/>
+                    <constraint firstAttribute="trailing" secondItem="rKq-f1-x86" secondAttribute="trailing" constant="30" id="VVs-PG-2Ta"/>
+                    <constraint firstAttribute="bottom" secondItem="rKq-f1-x86" secondAttribute="bottom" constant="10" id="gu7-Gu-mx8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dropDownImageView" destination="bbM-ub-UtV" id="9ue-Ua-3M5"/>
+                <outlet property="reasonLabel" destination="rKq-f1-x86" id="mnX-5t-4cU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dropDown" width="13" height="8"/>
+    </resources>
+</document>

@@ -1,0 +1,1820 @@
+{
+    "id": 2,
+    "createdBy": null,
+    "updatedBy": null,
+    "createdDate": null,
+    "updatedDate": null,
+    "isActive": true,
+    "outletNo": "Fh-3455",
+    "name": "Maki",
+    "amenity": {
+        "id": 1,
+        "createdBy": null,
+        "updatedBy": null,
+        "createdDate": null,
+        "updatedDate": null,
+        "isActive": true,
+        "name": "FOOD",
+        "description": null
+    },
+    "description": null,
+    "contact": 17522733,
+    "email": null,
+    "timings": [],
+    "budget": 1,
+    "rating": 0,
+    "ranking": 1,
+    "imageUrl": null,
+    "canAcessImages": true,
+    "canAcessItems": true,
+    "outletItems": [
+                    {
+                    "id": 1,
+                    "itemCategory": {
+                        "id": 1,
+                        "parent": {
+                            "id": 1,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Starters",
+                            "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "Veg-Starters",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "Veg Biryani",
+                    "price": 2,
+                    "description": "2 Veg Briyani + 1 Manchuria 65 + 1 Chilli Gobi + 2 Double ke Meetha",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": true
+                    },
+                    {
+                    "id": 2,
+                    "itemCategory": {
+                        "id": 1,
+                        "parent": {
+                            "id": 1,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Starters",
+                            "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "Veg-Starters",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.22,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "Panner Biryani",
+                    "price": 2,
+                    "description": "2 Panner Briyani + 1 Panner 65 + 1 Chilli Panner + 2 Double ke Meetha",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": false
+                    },
+                    {
+                    "id": 3,
+                    "itemCategory": {
+                        "id": 2,
+                        "parent": {
+                            "id": 1,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Starters",
+                            "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "NonVeg-Starters",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "Chicken Biryani",
+                    "price": 2,
+                    "description": "2 Chicken Briyani + 1 Chicken 65 + 1 Chilli Chicken + 2 Double ke Meetha",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": true
+                    },
+                    {
+                    "id": 4,
+                    "itemCategory": {
+                        "id": 2,
+                        "parent": {
+                            "id": 1,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Starters",
+                            "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "NonVeg-Starters",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "Fish Biryani",
+                    "price": 2,
+                    "description": "2 Fish Briyani + 1 Fish 65 + 1 Chilli Fish + 2 Double ke Meetha",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": false
+                    },
+                    {
+                    "id": 5,
+                    "itemCategory": {
+                        "id": 1,
+                        "parent": {
+                            "id": 2,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Soups",
+                            "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "Veg-Soup",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "Manchow Soup",
+                    "price": 2,
+                    "description": "2 Carrot + 1 Khera + 1 Chilli",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": true
+                    },
+                    {
+                    "id": 6,
+                    "itemCategory": {
+                        "id": 1,
+                        "parent": {
+                            "id": 2,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Soups",
+                            "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "Veg-Soup",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "Tomato Soup",
+                    "price": 2,
+                    "description": "2 Tomato",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": false
+                    },
+                    {
+                    "id": 7,
+                    "itemCategory": {
+                        "id": 2,
+                        "parent": {
+                            "id": 2,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Soups",
+                            "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "NonVeg-Soup",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "Chicken Soup",
+                    "price": 2,
+                    "description": "2 Chicken + 1 Carrot + 1 Chilli",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": true
+                    },
+                    {
+                    "id": 8,
+                    "itemCategory": {
+                        "id": 2,
+                        "parent": {
+                            "id": 2,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Soups",
+                        "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "NonVeg-Soup",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "Pai Soup",
+                    "price": 2,
+                    "description": "2 Mutton + 1 Carrot + 1 Chilli",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": false
+                    },
+                    {
+                    "id": 9,
+                    "itemCategory": {
+                        "id": 1,
+                        "parent": {
+                            "id": 3,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Combos",
+                            "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "NonVeg-Combo",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "Chicken Combo",
+                    "price": 2,
+                    "description": "2 Chicken Biryani + 1 Chicken Soup + 1 Rytha",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": true
+                    },
+                    {
+                    "id": 10,
+                    "itemCategory": {
+                        "id": 1,
+                        "parent": {
+                            "id": 3,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Combos",
+                            "description": null
+                        },
+                    "hideImage": false,
+                    "disable": false,
+                    "name": "NonVeg-Combo",
+                    "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "outletItemCustomFields": [],
+                    "name": "Fish Combo",
+                    "price": 2,
+                    "description": "2 Fish Biryani + 1 AppoloFish65 + 1 Rytha + 1 ChoclateMilkShake",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": false
+                    },
+                    {
+                    "id": 11,
+                    "itemCategory": {
+                        "id": 2,
+                        "parent": {
+                            "id": 3,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Combos",
+                            "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "Veg-Combo",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "Veg Birayani",
+                    "price": 2,
+                    "description": "2 Veg Biryani + 1 Munchuria + 1 Rytha + 1 ChoclateMilkShake",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": true
+                    },
+                    {
+                    "id": 12,
+                    "itemCategory": {
+                        "id": 1,
+                        "parent": {
+                            "id": 4,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Desserts",
+                            "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "IceCream",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "Veg Combo",
+                    "price": 2,
+                    "description": "ChocoChips",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": false
+                    },
+                    {
+                    "id": 13,
+                    "itemCategory": {
+                        "id": 1,
+                        "parent": {
+                            "id": 4,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Desserts",
+                            "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "IceCream",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "Choco-PineApple IceCream",
+                    "price": 2,
+                    "description": "ChocoChips + PineAppleSlices",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": true
+                    },
+                    {
+                    "id": 14,
+                    "itemCategory": {
+                        "id": 2,
+                        "parent": {
+                            "id": 4,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Desserts",
+                            "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "MilkShakes",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "Chocolate MilkShake",
+                    "price": 2,
+                    "description": "ChocoChips",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": false
+                    },
+                    {
+                    "id": 15,
+                    "itemCategory": {
+                        "id": 2,
+                        "parent": {
+                            "id": 4,
+                            "parent": null,
+                            "hideImage": false,
+                            "disable": false,
+                            "name": "Desserts",
+                            "description": null
+                        },
+                        "hideImage": false,
+                        "disable": false,
+                        "name": "MilkShakes",
+                        "description": null
+                    },
+                    "customizationItems": [{
+                                           "id" : 1,
+                                           "name" : "Jalapenos",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 2,
+                                           "name" : "Cucumbers",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 3,
+                                           "name" : "Tomatoes",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 4,
+                                           "name" : "Onions",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 5,
+                                           "name" : "Capsicum",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 6,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 1,
+                                           "category": {
+                                           "id": 1,
+                                           "name": "Veggis"
+                                           }
+                                           },
+                                           {
+                                           "id" : 7,
+                                           "name" : "Olives",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 8,
+                                           "name" : "Cheese (0.5)",
+                                           "price": 0.5,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           },
+                                           {
+                                           "id" : 9,
+                                           "name" : "Premium Veggie (0.2)",
+                                           "price": 0.2,
+                                           "type": 2,
+                                           "category": {
+                                           "id": 2,
+                                           "name": "Extras"
+                                           }
+                                           }
+                                           ],
+                    "outletItemCustomFields": [],
+                    "name": "PineApple MilkShake",
+                    "price": 2,
+                    "description": "PineApple Slices",
+                    "imageUrl": null,
+                    "active": true,
+                    "isSpicy": true,
+                    "isVeg": true,
+                    "recommend": true
+                    }
+                    ],
+    "address": {
+        "id": 2,
+        "createdBy": null,
+        "updatedBy": null,
+        "createdDate": null,
+        "updatedDate": null,
+        "isActive": false,
+        "latitude": 26.228516,
+        "longitude": 50.58605,
+        "landmark": "Bahrain World Trade Center King Faisal Hwy",
+        "doorNumber": null,
+        "zipCode": 0,
+        "addressType": null,
+        "location": "Manama",
+        "country": null,
+        "countryCode": 0
+    }
+}
