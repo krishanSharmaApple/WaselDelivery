@@ -14,8 +14,10 @@ import UIKit
 
 // private let localBaseUrl = "http://192.168.2.63:8071" // Local
 //private let preProductionBaseUrl = "https://dev.waseldelivery.com/"
-private let preProductionBaseUrl = "http://31.14.16.236:8072/"
-private let productionBaseUrl = "https://api.waseldelivery.com"  // Production live server
+
+// new url = "dev.waseldelivery.com"
+private let preProductionBaseUrl = "http://dev.waseldelivery.com/" //31.14.16.236:8072
+private let productionBaseUrl = "https://dev.waseldelivery.com" //api.waseldelivery.com  // Production live server
 
 #if DEBUG
     let baseUrl = preProductionBaseUrl

@@ -33,6 +33,7 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
         super.viewDidLoad()
         self.addNavigationView()
         self.navigationView?.titleLabel.text = "Sign in"
+//        mobileField
         mobileField.inputAccessoryView = toolBar
         passwordField.inputAccessoryView = toolBar
         if #available(iOS 13.0, *) {
