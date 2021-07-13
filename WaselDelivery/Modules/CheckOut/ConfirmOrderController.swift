@@ -91,13 +91,12 @@ class ConfirmOrderController: BaseViewController, AddressProtocol, CouponProtoco
         Tip()
     ]
     var selectedTipIndex = -1
-    
+    var isFreeDelivery = Int()
 // MARK: - ViewLifeCycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // setup costDetailTableView
         let footerView = UIView()
         footerView.backgroundColor = UIColor(red: 249 / 255, green: 249 / 255, blue: 249 / 255, alpha: 1)
         costDetailTableView.tableFooterView = footerView
@@ -1677,6 +1676,9 @@ class ConfirmOrderController: BaseViewController, AddressProtocol, CouponProtoco
 //        }
 
         let handlingFee = costStructure.handlingFee(outlet: self.outlet ?? Utilities.shared.currentOutlet)
+        if isFreeDelivery == 1{
+            costStructure.deliveryCharge = 0.000
+        }
         if 0 < costStructure.deliveryCharge {
             if let outlet_ = outlet, true == outlet_.isFleetOutLet {
                 grandTotalLabel.text = "\(String(format: "%.3f", costStructure.orderCost + costStructure.tip + costStructure.deliveryCharge + handlingFee - costStructure.discount))"

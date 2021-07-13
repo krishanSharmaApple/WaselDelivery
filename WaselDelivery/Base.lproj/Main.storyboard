@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -138,13 +139,13 @@
                                 <color key="separatorColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="hbD-lY-7Ns">
-                                    <rect key="frame" x="0.0" y="100" width="375" height="0.0"/>
+                                    <rect key="frame" x="0.0" y="93.000000346790671" width="375" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchHistoryCell" id="Tg9-9u-sLi" customClass="SearchHistoryCell" customModule="Wasel_Delivery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tg9-9u-sLi" id="iIf-Ah-AGO">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -162,7 +163,7 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2i1-PH-Bav">
-                                                    <rect key="frame" x="60" y="14" width="288" height="21"/>
+                                                    <rect key="frame" x="60" y="14" width="287" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="7go-v7-PZV"/>
                                                     </constraints>
@@ -272,7 +273,7 @@
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="20" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EmptySearchCellIdentifier" id="JNb-wC-qHR">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JNb-wC-qHR" id="4wN-cP-uAw">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -335,13 +336,13 @@
                                 <color key="separatorColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="LgS-gY-cTX">
-                                    <rect key="frame" x="0.0" y="100" width="375" height="0.0"/>
+                                    <rect key="frame" x="0.0" y="93.000000346790671" width="375" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchHistoryCell" id="Eog-kM-z8Q" customClass="SearchHistoryCell" customModule="Wasel_Delivery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eog-kM-z8Q" id="cbP-Kd-mXn">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -477,7 +478,7 @@
                                         <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s74-02-bPq">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s74-02-bPq">
                                         <rect key="frame" x="87.5" y="194" width="100" height="40"/>
                                         <color key="backgroundColor" red="0.33333333333333331" green="0.74509803921568629" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -765,7 +766,7 @@ to know your delivery area.</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationHistoryCell" rowHeight="56" id="Czc-6j-d3g" customClass="LocationHistoryCell" customModule="Wasel_Delivery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="56"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Czc-6j-d3g" id="UDL-YK-2Fs">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
@@ -1130,13 +1131,13 @@ to know your delivery area.</string>
                                     </constraints>
                                 </view>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="Bvu-Bk-0Xr">
-                                    <rect key="frame" x="0.0" y="450.5" width="375" height="1"/>
+                                    <rect key="frame" x="0.0" y="444.5" width="375" height="1"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderAnyThingLocationCell" rowHeight="46" id="68K-6r-6f3" customClass="OrderAnyThingLocationCell" customModule="Wasel_Delivery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="181.5" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="175.5" width="375" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="68K-6r-6f3" id="Mca-VJ-APr">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
@@ -1195,7 +1196,7 @@ to know your delivery area.</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderAnyThingCell" rowHeight="86" id="RgH-ub-aEa" customClass="OrderAnyThingCell" customModule="Wasel_Delivery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="227.5" width="375" height="86"/>
+                                        <rect key="frame" x="0.0" y="221.5" width="375" height="86"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RgH-ub-aEa" id="wA6-ik-KAp">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
@@ -1332,7 +1333,7 @@ to know your delivery area.</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderAnyThingVehicleCell" rowHeight="90" id="s8m-ht-Nay" customClass="OrderAnyThingVehicleCell" customModule="Wasel_Delivery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="313.5" width="375" height="90"/>
+                                        <rect key="frame" x="0.0" y="307.5" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s8m-ht-Nay" id="0St-oN-hog">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
@@ -1343,7 +1344,7 @@ to know your delivery area.</string>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdd-yt-Mjr" userLabel="MotorBike" customClass="VehicleTypeView" customModule="Wasel_Delivery" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="78"/>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="337-U6-ocA"/>
                                                                 <constraint firstAttribute="height" constant="80" id="7DP-hH-7H4"/>
@@ -1351,7 +1352,7 @@ to know your delivery area.</string>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6gv-5d-j2a" userLabel="Car" customClass="VehicleTypeView" customModule="Wasel_Delivery" customModuleProvider="target">
                                                             <rect key="frame" x="130" y="0.0" width="100" height="78"/>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="80" id="A72-J9-WAd"/>
                                                                 <constraint firstAttribute="width" constant="100" id="LJy-bK-Xhd"/>
@@ -1359,7 +1360,7 @@ to know your delivery area.</string>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Z3-tq-BdU" userLabel="Truck" customClass="VehicleTypeView" customModule="Wasel_Delivery" customModuleProvider="target">
                                                             <rect key="frame" x="260" y="0.0" width="100" height="78"/>
-                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="Rlm-Wr-ZjK"/>
                                                                 <constraint firstAttribute="height" constant="80" id="cOB-KC-5kE"/>
@@ -1384,7 +1385,7 @@ to know your delivery area.</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderAnyThingInstructionsCell" rowHeight="46" id="Igp-pU-fSD" customClass="OrderAnyThingInstructionsCell" customModule="Wasel_Delivery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="403.5" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="397.5" width="375" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Igp-pU-fSD" id="Pyk-VB-7Rb">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
@@ -1565,7 +1566,7 @@ to know your delivery area.</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="YTV-cO-DkF">
-                                    <rect key="frame" x="0.0" y="100" width="320" height="119"/>
+                                    <rect key="frame" x="0.0" y="93.000000346790671" width="320" height="119"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbA-ni-PZn" customClass="HighlightButton" customModule="Wasel_Delivery" customModuleProvider="target">
@@ -1603,7 +1604,7 @@ to know your delivery area.</string>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EmptyCellIdentifier" id="IZc-Ag-ciS">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IZc-Ag-ciS" id="3qI-uC-Dc3">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1677,7 +1678,7 @@ to know your delivery area.</string>
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="deV-Px-ADL">
-                                    <rect key="frame" x="0.0" y="346" width="375" height="95"/>
+                                    <rect key="frame" x="0.0" y="339.00000034679067" width="375" height="95"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGF-Sf-fyb" customClass="HighlightButton" customModule="Wasel_Delivery" customModuleProvider="target">
@@ -1726,7 +1727,7 @@ to know your delivery area.</string>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProfileViewCell" rowHeight="210" id="n6N-hM-Eo2" customClass="ProfileViewCell" customModule="Wasel_Delivery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="210"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="210"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="n6N-hM-Eo2" id="9aK-C8-sxm">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
@@ -1852,7 +1853,7 @@ to know your delivery area.</string>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ManageProfileCell" rowHeight="80" id="qym-LH-TaV" customClass="ManageProfileCell" customModule="Wasel_Delivery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="238" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="234.5" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qym-LH-TaV" id="qGW-Q5-yJ9">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
@@ -2234,7 +2235,7 @@ to know your delivery area.</string>
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N7-NM-Zoa">
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6N7-NM-Zoa">
                                             <rect key="frame" x="20" y="0.0" width="128" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="128" id="2dk-zA-mXj"/>
@@ -2287,13 +2288,13 @@ to know your delivery area.</string>
                                     </constraints>
                                 </view>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="huc-ii-gem">
-                                    <rect key="frame" x="0.0" y="196" width="375" height="0.0"/>
+                                    <rect key="frame" x="0.0" y="189.00000034679067" width="375" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantCell" rowHeight="44" id="IgP-Rf-j5t" customClass="RestaurantCell" customModule="Wasel_Delivery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="124" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="120.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IgP-Rf-j5t" id="Gs3-h4-v21">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -2402,7 +2403,7 @@ to know your delivery area.</string>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OutletEmptyCellIdentifier" id="rEf-NQ-lGg">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="163"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="163"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rEf-NQ-lGg" id="xZK-sX-efa">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
@@ -2410,7 +2411,7 @@ to know your delivery area.</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OutletCell" rowHeight="277" id="A1k-4T-dI1" customClass="OutletCell" customModule="Wasel_Delivery" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="191" width="375" height="277"/>
+                                        <rect key="frame" x="0.0" y="187.5" width="375" height="277"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A1k-4T-dI1" id="Nta-A4-2O4">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="277"/>
@@ -2949,5 +2950,8 @@ your wasel get exactly what you’d like</string>
         <image name="search_active" width="22" height="22"/>
         <image name="triangle1" width="15" height="15"/>
         <image name="tutorial1" width="230" height="206"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

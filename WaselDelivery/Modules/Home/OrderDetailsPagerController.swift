@@ -45,9 +45,13 @@ class OrderDetailsPagerController: ButtonBarPagerTabStripViewController {
             }
         }
     }
+    
+    var isFreeDelivery = Int()
+    var outL : Outlet?
+    
 
     override func viewDidLoad() {
-
+    
         settings.style.buttonBarBackgroundColor = .white
         settings.style.buttonBarItemBackgroundColor = .white
         settings.style.selectedBarBackgroundColor = .white

@@ -196,7 +196,7 @@ class OutletCell: UITableViewCell {
             }
             outletPricesLabel.text = pricesString
 
-            let deliveryChargeString = Utilities.getDeliveryChargeStringFrom(outlet: self.restaurant)
+            let deliveryChargeString = Utilities.getDeliveryChargeStringFrom(outlet: self.restaurant)            
             deliveryChargeLabel.text = deliveryChargeString
             if Double(deliveryChargeString) == nil {
                 kmBDLabel.text = " |"

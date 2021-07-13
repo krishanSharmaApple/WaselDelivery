@@ -122,10 +122,15 @@ class OrderAnythingController: BaseViewController, MultiLocationPopUpProtocol {
     }()
     
     var textViewSize = -1.0
+    var isFreeDelivery = 0
+    
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        if let freeDel = outlet?.freedelivery{
+            isFreeDelivery = freeDel
+        }
         let userDefaults = UserDefaults.standard
         userDefaults.removeObject(forKey: slectedPaymentMethod)
         userDefaults.synchronize()
@@ -167,10 +172,14 @@ class OrderAnythingController: BaseViewController, MultiLocationPopUpProtocol {
             outletHeaderBgView.isHidden = false
             if let outlet_ = outlet {
                 distanceLabel.attributedText = Utilities.getDistanceAttString(outlet: outlet_)
+                if isFreeDelivery == 0 {
                 if true == outlet?.isFleetOutLet {
                     costLabel.attributedText = NSAttributedString(string: outlet?.ownFleetDescription ?? "")
                 } else {
                     costLabel.attributedText = Utilities.getDeliveryChargeAttString(outlet: outlet_)
+                }
+                } else {
+                    costLabel.text = "BD : 0.00"
                 }
 
                 var pricesString = ""
@@ -508,11 +517,14 @@ class OrderAnythingController: BaseViewController, MultiLocationPopUpProtocol {
             outletHeaderBgView.isHidden = false
             if let outlet_ = outlet {
                 distanceLabel.attributedText = Utilities.getDistanceAttString(outlet: outlet_)
-                
+                if isFreeDelivery == 0{
                 if true == outlet?.isFleetOutLet {
                     costLabel.attributedText = NSAttributedString(string: outlet?.ownFleetDescription ?? "")
                 } else {
                     costLabel.attributedText = Utilities.getDeliveryChargeAttString(outlet: outlet_)
+                }
+                }else{
+                    costLabel.text = "BD : 0.00"
                 }
 
                 var pricesString = ""
@@ -787,6 +799,7 @@ class OrderAnythingController: BaseViewController, MultiLocationPopUpProtocol {
             checkoutController.shouldRepeatOrder = self.shouldRepeatOrder
             checkoutController.orderType = .special
             checkoutController.isVendorOutLet = self.isVendorOutLet
+            checkoutController.isFreeDelivery = isFreeDelivery
             if true == isVendorOutLet, let aOutlet = self.outlet {
                 checkoutController.outlet = aOutlet
             }
@@ -1141,6 +1154,14 @@ extension OrderAnythingController: UITableViewDelegate, UITableViewDataSource, U
                 return UITableViewCell()
            }
            cell.vehicleDelegate = self
+            
+             if isFreeDelivery == 1{
+                   cell.motorBikeView.setText(text: ("BD 0.000"))
+                   cell.carView.setText(text: ("BD 0.000"))
+                   cell.truckView.setText(text: ("BD 0.000"))
+
+            }
+        else{
            if let charge = deliveryCharge?.bikeDeliveryCharge {
             cell.motorBikeView.setText(text: ("BD \(Utilities.format(value: charge))"))
            }
@@ -1150,6 +1171,8 @@ extension OrderAnythingController: UITableViewDelegate, UITableViewDataSource, U
            if let charge = deliveryCharge?.truckDeliveryCharge {
              cell.truckView.setText(text: ("BD \(Utilities.format(value: charge))"))
            }
+         }
+           
            switch self.currentVehicle {
            case .motorbike:
              cell.selectMotorBike()
@@ -1159,6 +1182,7 @@ extension OrderAnythingController: UITableViewDelegate, UITableViewDataSource, U
               cell.selectTruck()
            }
 
+            
            return cell
         default:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: OrderAnyThingInstructionsCell.cellIdentifier(), for: indexPath) as? OrderAnyThingInstructionsCell else {

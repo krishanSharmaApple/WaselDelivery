@@ -19,6 +19,7 @@ class Outlet: Unboxable {
     let budget: Budget?
     var distance: String?
     var deliveryCharge: Double?
+    var freedelivery: Int?
     var minimumOrderValue: Double?
     let description: String?
     let canAccessImages: Bool?
@@ -68,6 +69,7 @@ class Outlet: Unboxable {
         self.rating = try? unboxer.unbox(key: "rating")
         self.budget = try? unboxer.unbox(key: "budget")
         self.distance = try? unboxer.unbox(key: "distance")
+        self.freedelivery = try? unboxer.unbox(key: "freedelivery")
         let delCharge: String? = try? unboxer.unbox(key: "deliveryCharge")
         if let delCharge_ = delCharge {
             self.deliveryCharge = Double(delCharge_)
@@ -75,6 +77,9 @@ class Outlet: Unboxable {
             self.deliveryCharge = nil
         }
 
+        if freedelivery == 1{
+            deliveryCharge = 0.000
+        }
         self.handleFeeType = try? unboxer.unbox(key: "handleFeeType")
         self.handleFee = (try? unboxer.unbox(key: "handleFee")) ?? 0
         

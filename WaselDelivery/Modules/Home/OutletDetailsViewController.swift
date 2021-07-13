@@ -38,6 +38,7 @@ class OutletDetailsViewController: BaseViewController, MultiLocationPopUpProtoco
     var shouldRepeatOrder = false
     var isFromOrderDetailsScreen: Bool = false
     private var isViewDidLoad = false
+    var isFreeDelivery = Int()
 
     var isFromSearchScreen: Bool = false {
         didSet {
@@ -72,6 +73,11 @@ class OutletDetailsViewController: BaseViewController, MultiLocationPopUpProtoco
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        if let freeDel = outlet?.freedelivery{
+            isFreeDelivery = freeDel
+        }
+        
         if let outletsArray = self.selectedOutletInformation?.outlet, outletsArray.count > 1 {
             multiLocationButton.isHidden = false
         } else {
@@ -727,13 +733,14 @@ class OutletDetailsViewController: BaseViewController, MultiLocationPopUpProtoco
     func updateOutletDetails(_ itemCategories: [OutletItemCategory]) {
         let (viewControllerIndex, outletItem) = getProductDetailsBy(id: productId, from: itemCategories)
         
-        DispatchQueue.main.async(execute: {
+        DispatchQueue.main.async(execute: { [self] in
             Utilities.hideHUD(from: self.view)
             self.itemsArray = itemCategories
             if let aArray = self.itemsArray, aArray.count > 0 {
                 self.infoView?.isHidden = true
                 if let child = self.children.last, child is OrderDetailsPagerController {
                     if let childController = child as? OrderDetailsPagerController {
+                        
                         childController.outletCategories = aArray
                         if viewControllerIndex >= 0 {
                             childController.outletItem = outletItem
@@ -773,12 +780,13 @@ class OutletDetailsViewController: BaseViewController, MultiLocationPopUpProtoco
             navigationView?.titleLabel.text = outletName.trim()
         }
         distanceLabel.attributedText = Utilities.getDistanceAttString(outlet: outlet)
+       
         if true == outlet.isFleetOutLet {
             costLabel.attributedText = NSAttributedString(string: outlet.ownFleetDescription ?? "")
         } else {
             costLabel.attributedText = Utilities.getDeliveryChargeAttString(outlet: outlet)
         }
-
+      
         var pricesString = ""
         let handlingFeeString = Utilities.getHandleFeeStringFrom(outlet: outlet)
         if outlet.showVendorMenu ?? false {

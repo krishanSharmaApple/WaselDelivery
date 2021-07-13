@@ -1051,6 +1051,7 @@ class Utilities {
     
     class func getDeliveryChargeAttString(outlet: Outlet) -> NSAttributedString {
         if let deliveryCharge_ = outlet.deliveryCharge {
+            if outlet.freedelivery == 0 {
             if deliveryCharge_ > 0 {
                 let charge_ = Float(round(deliveryCharge_ * 1000) / 1000)
                 let attrString = NSMutableAttributedString(string: "BD \(String(format: "%.3f", charge_))")
@@ -1061,6 +1062,9 @@ class Utilities {
             } else {
                 return NSAttributedString(string: "Free Delivery")
             }
+            }else {
+                return NSAttributedString(string: "BD : 0.00")
+            }
         } else {
             return NSAttributedString(string: "")
         }
@@ -1069,10 +1073,13 @@ class Utilities {
     /// Returns delivery charges srting in the formatt "Delivery Fee: BD 0.000"
     class func getDeliveryChargeStringFrom(outlet: Outlet) -> String {
         var deliveryChargeString = ""
+        
         if outlet.isFleetOutLet ?? false {
             deliveryChargeString = outlet.ownFleetDescription ?? ""
         } else if let deliveryCharge = outlet.deliveryCharge {
-            if deliveryCharge > 0 {
+        if outlet.freedelivery == 1 {
+            deliveryChargeString = "Free"
+        } else  if deliveryCharge > 0 {
                 deliveryChargeString = String(format: "%.3f", Float(deliveryCharge.roundedToBD))
             } else if deliveryCharge == 0 {
                 deliveryChargeString = "Free"
